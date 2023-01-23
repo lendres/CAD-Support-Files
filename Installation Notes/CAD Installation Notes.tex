@@ -1,0 +1,99 @@
+\documentclass{lebook}
+\usepackage{lelists}
+\setlength{\listtopsep}{0pt}
+\setlength{\leftlistindent}{0pt}
+\setlength{\rightlistindent}{0pt}
+
+\usepackage{lefonts}
+\usepackage{lefontsizes}
+\usepackage{lecode}
+\codefontsize{\small}
+
+\usepackage{legraphicextensions}
+\graphicspath{{Figures/}}
+
+\usepackage{lesubscripts}
+\usepackage[pdfauthor={Lance A. Endres}, pdftitle={WinEdt Installation Notes, colorlinks}]{lehyperlink}
+\usepackage{leheadersandfooters}
+
+\usepackage{leaddress}
+
+\usepackage{times}
+
+\newcommand{\tbs}{$\backslash$}
+\newcommand*{\rootdir}{\textcode{\textit{root}}}
+\newcommand*{\supportdir}{\textcode{\textit{support}}}
+\newcommand*{\userdir}{\textcode{\textit{user}}}
+
+\newcommand*{\supportpath}{\supportdir\tbs}
+\newcommand*{\userpath}{\userdir\tbs}
+%\newcommand*{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{leplainheader}
+\begin{document}
+
+\chapter{Installation}
+\section{Introduction}
+
+\begin{tabular}{|l|l|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  \rootdir & \textcode{C:\tbs{}Custom Program Files\tbs{}CAD Support Files\tbs{}} \\ \hline
+  \supportdir & \rootdir\tbs{}\textcode{Support} \\ \hline
+  \userdir & \rootdir\tbs{}\textcode{User Files} \\ \hline
+\end{tabular}
+
+
+\section{Command Aliases (PGP)}
+\begin{numberedlist}
+    \item Open the software's PGP file.
+    \item Copy of contents of the \userpath\textcode{user.pgp} to the bottom of the software's PGP file.
+    \item Close the file and reload it.  The aliases at the bottom will override those at the top.
+\end{numberedlist}
+
+\section{Paths}
+\begin{numberedlist}
+    \item Open the options (command \textcode{options}).
+    \item Expand the \textcode{File$\rightarrow$Support File Search Path}.
+    \item Add the \supportpath{} directory.
+    \item Move the entry to the top so that anything in that directory is found first.  See \figurename~\ref{fig:addsupportdirectory}.
+\end{numberedlist}
+
+\section{Lisp}
+\begin{numberedlist}
+    \item Find the software's \textcode{\textit{document}.lsp}.  Examples include:
+    \begin{bulletedlist}
+    	\item \textcode{acaddoc.lsp}
+    	\item \textcode{gcad2023doc.lsp}.
+    \end{bulletedlist}
+    \item Copy it to the \supportpath{} directory.
+    \item Edit the file to add the following the end (just before the file \textcode{(princ)} function):
+    \begin{plainlist}
+    	\item \textcode{; Added to support autoload of custom lisp files.}
+		\item \textcode{(load "userdoc.lsp")}
+    \end{plainlist}
+
+\end{numberedlist}
+
+
+%\begin{plainlist}
+%	\item \textcode{BUTTON="Make\_Document"}
+%\end{plainlist}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=3.5in]{addsupportdirectory}
+	\caption{Add the user's support directory to the search path.}
+	\label{fig:addsupportdirectory}
+\end{figure}
+
+
+%\href{https://github.com/microsoft/PowerToys}{PowerToys on Github}
+
+
+
+\end{document} 

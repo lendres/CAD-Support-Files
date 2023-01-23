@@ -1,0 +1,579 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.11.4)  23 JAN 2023 08:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"./CAD Installation Notes.tex"
+(CAD Installation Notes.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-21>
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lebook.cls
+Document Class: lebook 2004/04/28 v1.0\ Lance A. Endres
+(F:\Program Files\MiKTeX 2.9\tex/latex/base\book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(F:\Program Files\MiKTeX 2.9\tex/latex/base\bk12.clo
+File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lesections.sty
+Package: lesections 2006/05/09 Provides commands changing how the section headi
+ngs are formatted.
+
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lefonts.sty
+Package: lefonts 2005/10/30 Provides easy access to true type fonts. This file 
+is for using built in fonts (just providing commands for them). See "legenerate
+dfonts.sty" for fonts that were generated manually for LaTeX.
+
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\legeneratedfonts.sty
+Package: legeneratedfonts 2005/10/30 Provides easy access to true type fonts th
+at were generated. They have to be present and installed to use. See "Read Me.t
+xt" in "LaTeX" directory in "Custom Program Files" folder for information on in
+stallation. See also, "lefonts.sty."
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)))
+\chapterstyleblofskip=\skip49
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count194
+\calc@Bcount=\count195
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count196
+\calc@Cskip=\skip52
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lefontsizes.sty
+Package: lefontsizes 2006/06/25 Font Size Package
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lecaptions.sty
+Package: lecaptions 2006/08/16 Provides caption names.
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lepageformat.sty
+Package: lepageformat 2006/08/16 Setup page size/margins/et cetera.
+\pageheight=\skip53
+\bottommargin=\skip54
+\footmargin=\skip55
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lefloats.sty
+Package: lefloats 2006/05/09 Provides commands to modify how floats are display
+ed.
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lecontentsindexbibformat.sty
+Package: lecontentsindexbibformat 2006/08/16 Provides additional formatting for
+ the table of contents, bibliography, list of figures, list of tables, list of 
+notations, glossary, index, and captions.
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip56
+\cftbeforetoctitleskip=\skip57
+\cftaftertoctitleskip=\skip58
+\cftbeforepartskip=\skip59
+\cftpartnumwidth=\skip60
+\cftpartindent=\skip61
+\cftbeforechapskip=\skip62
+\cftchapindent=\skip63
+\cftchapnumwidth=\skip64
+\cftbeforesecskip=\skip65
+\cftsecindent=\skip66
+\cftsecnumwidth=\skip67
+\cftbeforesubsecskip=\skip68
+\cftsubsecindent=\skip69
+\cftsubsecnumwidth=\skip70
+\cftbeforesubsubsecskip=\skip71
+\cftsubsubsecindent=\skip72
+\cftsubsubsecnumwidth=\skip73
+\cftbeforeparaskip=\skip74
+\cftparaindent=\skip75
+\cftparanumwidth=\skip76
+\cftbeforesubparaskip=\skip77
+\cftsubparaindent=\skip78
+\cftsubparanumwidth=\skip79
+\cftbeforeloftitleskip=\skip80
+\cftafterloftitleskip=\skip81
+\cftbeforefigskip=\skip82
+\cftfigindent=\skip83
+\cftfignumwidth=\skip84
+\c@lofdepth=\count197
+\c@lotdepth=\count198
+\cftbeforelottitleskip=\skip85
+\cftafterlottitleskip=\skip86
+\cftbeforetabskip=\skip87
+\cfttabindent=\skip88
+\cfttabnumwidth=\skip89
+)
+\lofskip=\skip90
+
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lebaseline.sty
+Package: lebaseline 2021/08/08 Provides easy to use commands for baseline comma
+nds.
+)
+(F:\Program Files\MiKTeX 2.9\tex/latex/base\makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/tools\multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count199
+\mult@box=\box50
+\multicol@leftmargin=\dimen141
+\c@unbalance=\count266
+\c@collectmore=\count267
+\doublecol@number=\count268
+\multicoltolerance=\count269
+\multicolpretolerance=\count270
+\full@width=\dimen142
+\page@free=\dimen143
+\premulticols=\dimen144
+\postmulticols=\dimen145
+\multicolsep=\skip91
+\multicolbaselineskip=\skip92
+\partial@page=\box51
+\last@line=\box52
+\maxbalancingoverflow=\dimen146
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@firstbox=\box55
+\mult@gfirstbox=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\c@minrows=\count271
+\c@columnbadness=\count272
+\c@finalcolumnbadness=\count273
+\last@try=\dimen147
+\multicolovershoot=\dimen148
+\multicolundershoot=\dimen149
+\mult@nat@firstbox=\box93
+\colbreak@box=\box94
+\mc@col@check@num=\count274
+))
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\leheadersandfooters.sty
+Package: leheadersandfooters 2006/08/16 Provides sets of headers and footers.
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lecontactinfo.sty
+Package: lecontactinfo 2020/03/28 Provides name, address, email, phone, et cete
+ra contact commands.
+)))
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lelists.sty
+Package: lelists 2005/07/08 Custom Lists Package
+\leftlistindent=\skip93
+\rightlistindent=\skip94
+\listlevelleftindent=\skip95
+\listtopsep=\skip96
+\c@listlevel=\count275
+\plainlistlevelleftindent=\skip97
+\plainlist@levelleftindent=\skip98
+\c@thenumberedlist=\count276
+\c@theupperletteredlist=\count277
+\c@thelowerletteredlist=\count278
+\c@thecountdownlist=\count279
+\c@outlinei=\count280
+\c@outlineii=\count281
+\c@outlineiii=\count282
+\c@outlineiv=\count283
+\c@outlinev=\count284
+\c@outlinevi=\count285
+\outlineindent=\skip99
+\outlinelabelwidth=\skip100
+\outlinemainitemparsep=\skip101
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lecode.sty
+Package: lecode 2006/02/07 Provides commands for printing programming source co
+de.
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\bracketspace=\skip102
+\storebracketspace=\skip103
+\simplecodememberindent=\skip104
+\standardcodeindent=\skip105
+\initialcodeindent=\skip106
+\codeindent=\skip107
+\codeindentstore=\skip108
+\@initialcodeindentstore=\skip109
+\c@codeline=\count286
+\c@codesolveline=\count287
+\standardcodeitemsep=\skip110
+\codeitemsep=\skip111
+\tightcodeitemsep=\skip112
+\codehangingindent=\skip113
+\adjustforflushleft=\skip114
+\labelnegwidth=\skip115
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\legraphicextensions.sty
+Package: legraphicextensions 2005/07/31 My graphic extension settings.
+
+(F:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(F:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(F:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+))
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lesubscripts.sty
+Package: lesubscripts 2005/07/18 Provides a Subscript and Superscript
+)
+(C:/Custom Program Files/LaTeX\TeX/LaTeX\lehyperlink.sty
+Package: lehyperlink 2005/07/31 Standard hyperlink settings.
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (F:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(F:\Program Files\MiKTeX 2.9\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/kvdefinekeys\kvdefinekey
+s.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/letltxmacro\letltxmacro.st
+y
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen152
+\Hy@linkcounter=\count288
+\Hy@pagecounter=\count289
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(F:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count290
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `final' set `true' on input line 4073.
+Package hyperref Info: Option `breaklinks' set `false' on input line 4073.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4073.
+Package hyperref Info: Option `linktocpage' set `false' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count291
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen153
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/bigintcalc\bigintcalc.st
+y
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count292
+\Field@Width=\dimen154
+\Fld@charsize=\dimen155
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+ (F:\Program Files\MiKTeX 2.9\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count293
+\c@Item=\count294
+)
+Package hyperref Info: Driver: hpdftex.
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count295
+\c@bookmark@seq@number=\count296
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/rerunfilecheck\rerunfilech
+eck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/uniquecounter\uniquecoun
+ter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip116
+)) (C:/Custom Program Files/LaTeX\TeX/LaTeX\leaddress.sty
+Package: leaddress 2005/07/31 Contact info that can be reused.
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+7.
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(F:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count297
+\l__pdf_internal_box=\box95
+)
+(CAD Installation Notes.aux)
+\openout1 = `"CAD Installation Notes.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 37.
+
+(F:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count298
+\scratchdimen=\dimen156
+\scratchbox=\box96
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen157
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks18
+) (F:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring ON on input line 37.
+
+(F:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Lance\AppData\Roaming\MiKTeX\2.9\tex/generic/gettitlestring\gettitles
+tring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count304
+)
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
+ (CAD Installation Notes.out) (CAD Installation Notes.out)
+\@outlinefile=\write3
+\openout3 = `"CAD Installation Notes.out"'.
+
+
+Chapter 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+LaTeX Font Info:    Trying to load font information for T1+ucr on input line 45
+.
+(F:\Program Files\MiKTeX 2.9\tex/latex/courier\t1ucr.fd
+File: t1ucr.fd 1998/11/05 Fontinst v1.800 font definitions for T1/ucr.
+)
+LaTeX Font Info:    Font shape `T1/ucr/b/it' in size <10.95> not available
+(Font)              Font shape `T1/ucr/b/sl' tried instead on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 45.
+<Figures//addsupportdirectory.jpg, id=24, 491.58656pt x 417.05812pt>
+File: Figures//addsupportdirectory.jpg Graphic file (type jpg)
+<use Figures//addsupportdirectory.jpg>
+Package pdftex.def Info: Figures//addsupportdirectory.jpg  used on input line 8
+9.
+(pdftex.def)             Requested size: 252.94499pt x 214.5996pt.
+
+
+AED: lastpage setting LastPage
+[1{C:/Users/Lance/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}
+
+
+]
+[2 <./Figures//addsupportdirectory.jpg>] (CAD Installation Notes.aux)
+Package rerunfilecheck Info: File `"CAD Installation Notes".out' has not change
+d.
+(rerunfilecheck)             Checksum: 1A35E59A6CA88A1EAEE5ECB00AC1ED3A;584.
+ ) 
+Here is how much of TeX's memory you used:
+ 9838 strings out of 478584
+ 164006 string characters out of 2852288
+ 455321 words of memory out of 3000000
+ 27825 multiletter control sequences out of 15000+600000
+ 482121 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 85i,8n,90p,276b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+{F:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<F:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/courier/ucrb8a.pfb><F:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/courier/ucrbo8a.pfb><C:/Users/Lance/AppData/Roaming/MiKTeX/2.9/fonts/type1/ur
+w/times/utmb8a.pfb><C:/Users/Lance/AppData/Roaming/MiKTeX/2.9/fonts/type1/urw/t
+imes/utmr8a.pfb>
+Output written on "CAD Installation Notes.pdf" (2 pages, 138127 bytes).
+PDF statistics:
+ 79 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
