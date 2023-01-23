@@ -28,7 +28,7 @@
 
 (AUTOLOAD "arced.lsp" '("arced"))
 
-(AUTOLOAD "arcleader.fas" '("al"))
+(AUTOLOAD "arcleader.lsp" '("al"))
 
 (AUTOLOAD "asctext.lsp" '("asctext"))
 
