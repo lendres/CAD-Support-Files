@@ -1,4 +1,31 @@
-# Compiled
+# LaTeX temporary and output files
+*.bak
+*.log
+*.dvi
+*.pdf
+*.out
+*.aux
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.alg
+*.acn
+*.acr
+*.stg
+*.sto
+*.sts
+*.ist
+*.mdg
+*.mto
+*.mts
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.synctex
+*.synctex(busy)
 
 # Backup files
 *~
