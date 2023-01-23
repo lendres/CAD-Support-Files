@@ -24,7 +24,7 @@
 
 (AUTOLOAD "addpstyles.vlx" '("addpstyles"))
 
-(AUTOLOAD "angle.fas" '("angle"))
+(AUTOLOAD "angle.lsp" '("angle"))
 
 (AUTOLOAD "arced.lsp" '("arced"))
 
