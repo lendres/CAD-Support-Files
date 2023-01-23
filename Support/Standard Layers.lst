@@ -1,0 +1,475 @@
+This file contains the layer setting standards for Strategic Energy Solutions.  This file
+is used by the SETUP lisp routine to set layers within a drawing.
+
+The layers should take the following convention.
+
+Layer_Name
+Layer_Color
+Layer_Linetype
+Plot/No Plot
+[Named Plot Style]
+
+The layer name has to be a valid AutoCAD layer name.  The linetypes have to be loaded before or by
+SETUP.  Only the six listings below are valid catagories.  SETUP is caps sensitive.  Lines
+can be skipped and spaces before and after (not in the middle of) listings are ignored.  Tabs are also
+ignored.  Nothing should be placed within the headings except layer data.
+
+All layer names, colors, and linetypes are checked for validity before being used.  Besure to include
+a color, linetype, and plot/no plot status or the remaining layers within the heading may not be 
+created.
+
+DO NOT ALTER THE HEADINGS.  Doing so will prevent that heading from functioning.
+
+SETUP
+Copyright 1998-2000 by Lance A. Endres
+
+
+
+**GENRE01
+    Demo-Hatch
+        8
+        Continuous
+        Plot
+        Background
+    Light-D
+        Yellow
+        Continuous
+        Plot
+        New Work
+    Light-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Light-N
+        Cyan
+        Continuous
+        Plot
+        New Work
+    Ltgckt-D
+        Green
+        Continuous
+        Plot
+        New Work
+    Ltgckt-E
+        32
+        Continuous
+        Plot
+        Exist to Remain
+    Ltgckt-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    Panel-D
+        Green
+        Continuous
+        Plot
+        New Work
+    Panel-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Panel-N
+        Cyan
+        Continuous
+        Plot
+        New Work
+
+
+
+**GENRE02
+    Demo-Hatch
+        8
+        Continuous
+        Plot
+        Background
+    Power-D
+        Green
+        Continuous
+        Plot
+        New Work
+    Power-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Power-N
+        Green
+        Continuous
+        Plot
+        New Work
+    Pwrckt-D
+        Green
+        Continuous
+        Plot
+        New Work
+    Pwrckt-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Pwrckt-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    Aux-D
+        Green
+        Continuous
+        Plot
+        New Work
+    Aux-E
+        12
+        Continuous
+        Plot
+        Exist to Remain
+    Aux-N
+        Magenta
+        Continuous
+        Plot
+        New Work
+    Panel-D
+        Green
+        Continuous
+        Plot
+        New Work
+    Panel-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Panel-N
+        Cyan
+        Continuous
+        Plot
+        New Work
+
+
+
+**GENRE03
+    Demo-Hatch
+        8
+        Continuous
+        Plot
+        Background
+    Demo
+        Cyan
+        Continuous
+        Plot
+        New work
+    Clearance
+        20
+        Dashdot_SES
+        No
+        Background
+    Pad
+        25
+        Continuous
+        Plot
+        Background
+    Duct_Exh-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    Duct_Exh-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Duct_Ret-N
+        Magenta
+        Continuous
+        Plot
+        New Work
+    Duct_Ret-E
+        12
+        Continuous
+        Plot
+        Exist to Remain
+    Duct_Sup-N
+        Green
+        Continuous
+        Plot
+        New Work
+    Duct_Sup-E
+        32
+        Continuous
+        Plot
+        Exist to Remain
+    Diffuser-N
+        Cyan
+        Continuous
+        Plot
+        New Work
+    Diffuser-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    MEquip-N
+        30
+        Continuous
+        Plot
+        New Work
+    MEquip-E
+        12
+        Continuous
+        Plot
+        Exist to Remain
+    MEquip_Elec-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    MEquip_Elec-E
+        32
+        Continuous
+        Plot
+        Exist to Remain
+
+
+
+
+**GENRE04
+    Demo-Hatch
+        8
+        Continuous
+        Plot
+        Background
+    Demo
+        Cyan
+        Continuous
+        Plot
+        New work
+    Clearance
+        20
+        Dashdot_SES
+        No
+        Background
+    Pad
+        25
+        Continuous
+        Plot
+        Background
+    CW-N
+        Cyan
+        Continuous
+        Plot
+        New Work
+    CW-E
+        133
+        Continuous
+        Plot
+        Exist to Remain
+    HW-N
+        Magenta
+        Continuous
+        Plot
+        New Work
+    HW-E
+        230
+        Continuous
+        Plot
+        Exist to Remain
+    FP-N
+        Magenta
+        Continuous
+        Plot
+        New Work
+    FP-E
+        134
+        Continuous
+        Plot
+        Exist to Remain
+    Gas-N
+        Cyan
+        Continuous
+        Plot
+        New Work
+    Gas-E
+        66
+        Continuous
+        Plot
+        Exist to Remain
+    Vent-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    Vent-E
+        60
+        Continuous
+        Plot
+        Exist to Remain
+    Storm-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    Storm-E
+        53
+        Continuous
+        Plot
+        Exist to Remain
+    San-N
+        Green
+        Continuous
+        Plot
+        New Work
+    San-E
+        212
+        Continuous
+        Plot
+        Exist to Remain
+    San_UG-N
+        Green
+        Dashed_SES
+        Plot
+        New Work
+    San_UG-E
+        153
+        Dashed_SES
+        Plot
+        Exist to Remain
+    Storm_UG-N
+        Yellow
+        Dashed_SES
+        Plot
+        New Work
+    Storm_UG-E
+        153
+        Dashed_SES
+        Plot
+        Exist to Remain
+    Cond-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    Cond-E
+        12
+        Continuous
+        Plot
+        Exist to Remain
+    Steam-N
+        Magenta
+        Continuous
+        Plot
+        New Work
+    Steam-E
+        32
+        Continuous
+        Plot
+        Exist to Remain
+    HHW-N
+        Magenta
+        Continuous
+        Plot
+        New Work
+    HHW-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    CHW-N
+        Green
+        Continuous
+        Plot
+        New Work
+    CHW-E
+        12
+        Continuous
+        Plot
+        Exist to Remain
+    CONDW-N
+        Cyan
+        Continuous
+        Plot
+        New Work
+    CONDW-E
+        32
+        Continuous
+        Plot
+        Exist to Remain
+    GEO-N
+        Green
+        Continuous
+        Plot
+        New Work
+    GEO-E
+        32
+        Continuous
+        Plot
+        Exist to Remain
+    PLEquip-N
+        30
+        Continuous
+        Plot
+        New Work
+    PLEquip-E
+        12
+        Continuous
+        Plot
+        Exist to Remain
+    PLEquip_Elec-N
+        Yellow
+        Continuous
+        Plot
+        New Work
+    PLEquip_Elec-E
+        32
+        Continuous
+        Plot
+        Exist to Remain
+
+
+
+
+**GENRE05
+
+
+
+**GENRE06
+    Oneline-D
+        Green
+        Continuous
+        Plot
+        NW Bold
+    Oneline-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Oneline-B
+        8
+        Continuous
+        Plot
+        Background
+    Oneline-N
+        Green
+        Continuous
+        Plot
+        NW Bold
+    Detail-N
+        Green
+        Continuous
+        Plot
+        New Work
+    Detail-E
+        11
+        Continuous
+        Plot
+        Exist to Remain
+    Detail-B
+        8
+        Continuous
+        Plot
+        Background
+    Detail-T
+        Red
+        Continuous
+        Plot
+        Text

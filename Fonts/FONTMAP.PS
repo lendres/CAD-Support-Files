@@ -1,0 +1,283 @@
+%       This is the release version of fontmap.ps.  It uses the
+%       fonts distributed with AutoCAD release 12, as well as 
+%       those fonts distributed by Adobe in the Adobe Type 
+%       Manager for Windows, Adobe Plus Pack, and
+%       Adobe Font Pack 1 DOS releases.
+
+%       The original fontmap.ps distributed with the Ghostscript 
+%       source code is used as a model; thus, this file is 
+%       covered by the Ghostscript copyright,
+%       although most of the information herein is specific to 
+%       the Autodesk implementation.
+%
+%    Copyright (C) 1990 Aladdin Enterprises.  All rights reserved.
+%    Distributed by Free Software Foundation, Inc.
+%
+% This file is part of Ghostscript.
+%
+% Ghostscript is distributed in the hope that it will be useful, but
+% WITHOUT ANY WARRANTY.  No author or distributor accepts responsibility
+% to anyone for the consequences of using it or for whether it serves any
+% particular purpose or works at all, unless he says so in writing.  Refer
+% to the Ghostscript General Public License for full details.
+%
+% Everyone is granted permission to copy, modify and redistribute
+% Ghostscript, but only under the conditions described in the Ghostscript
+% General Public License.  A copy of this license is supposed to have been
+% given to you along with Ghostscript so you can know your rights and
+% responsibilities.  It should be in a file named COPYING.  Among other
+% things, the copyright notice and this notice must be preserved on all
+% copies.
+
+%
+%  ***********************************************************************
+%  *                                                                     *
+%  *    M   M    OOO    DDDD     III    FFFFF    III    EEEEE   DDDD     *
+%  *    MM MM   O   O   D   D     I     F         I     E       D   D    *
+%  *    M M M   O   O   D   D     I     F         I     E       D   D    *
+%  *    M   M   O   O   D   D     I     FFF       I     EEE     D   D    *
+%  *    M   M   O   O   D   D     I     F         I     E       D   D    *
+%  *    M   M   O   O   D   D     I     F         I     E       D   D    *
+%  *    M   M    OOO    DDDD     III    F        III    EEEEE   DDDD     *
+%  *                                                                     *
+%  *                                                                     *
+%  *                   FFFFF    III    L       EEEEE                     *
+%  *                   F         I     L       E                         *
+%  *                   F         I     L       E                         *
+%  *                   FFF       I     L       EEE                       *
+%  *                   F         I     L       E                         *
+%  *                   F         I     L       E                         *
+%  *                   F        III    LLLLL   EEEEE                     *
+%  *                                                                     *
+%  ***********************************************************************
+%
+%                              .-------------.
+%                              |      /\     |
+%                              |     /  \    |
+%                              |    / /\ \   |
+%                              |   / /  \ \  |
+%                              |  / / /\ \ \ |
+%                              | / / /  \ \ \|
+%                              `-------------'  (R)
+%                               Autodesk, Inc.
+%                   Tools For the Golden Age of Engineering
+%
+%   In  keeping with subparagraph 2a of the Gnu General Public License
+%   (Version 1, February 1989):
+%
+%   2.  You may modify your copy or  copies  of  the  Program  or  any
+%   portion  of  it,  and copy and distribute such modifications under
+%   the terms of Paragraph 1 above, provided  that  you  also  do  the
+%   following:
+%
+%      a)  cause the modified files to carry prominent notices stating
+%          that you changed the files and the date of any change; and...
+%
+%   the  following  is  a  summary of the changes to this file made by
+%   Autodesk, Inc. in August 1991 in order to adapt Ghostscript to run
+%   as  an  ADS  application  and  thereby  to  perform  rendering  of
+%   PostScript files within AutoCAD.
+%
+%   FONTMAP.PS          This file is a heavily modified version of the
+%                       Ghostscript font map. Though the structure is
+%                       identical to the Ghostscript structure, comments
+%                       relating to the Ghostscript distribution fonts
+%                       are removed. 
+% ************************************************************************
+
+% ----------------------------------------------------------------
+
+% This file is a catalog of fonts known to Ghostscript.  Any font 
+% that is to be loaded automatically when named  must be in this catalog.
+
+% Each font has an entry consisting of five items:
+%
+%       - The name by which the font is known inside Ghostscript
+%       (a Ghostscript literal name).  This is used to find the file
+%       from which a font of a given name should be loaded.
+%
+%       - The name of the Ghostscript font file (a Ghostscript string).
+%       This should be either an Adobe Type 1 .pfb file, or a Ghostscript
+%       .gsf file.
+%
+%       - The encoding to be used with the font (a Ghostscript literal name).
+%       This is used only when converting the font.  Currently, the only
+%       defined encodings are `/StandardEncoding' and `/SymbolEncoding'.
+%       If the font or the conversion program specifies the encoding itself,
+%       the encoding should be `null' (not `/null').
+%
+%       - The uniqueID of the font (an integer).  This is used to identify
+%       to identify distinct fonts within the Ghostscript font machinery.
+%       This number will be included with the documentation for new fonts
+%       you wish to add.
+%
+%       - A terminating semicolon.
+
+% Because of limitations in the MS-DOS environment, Ghostscript font
+% file names must be no more than 8 characters long, must consist only
+% of LOWER CASE letters, digits, and underscores, and must start with a
+% letter.  Font names, on the other hand, need only obey the syntax of
+% names in the Ghostscript language, which is much more liberal.
+
+% The following table is actually a Ghostscript data structure.
+% If you add new entries, be sure to copy the punctuation accurately.
+% If you add many new entries, you might need to change the file
+% ACADPSI.PS; there is a line that currently says 
+% /FontDirectory 100 dict def
+% Increase the 100 if you run into PostScript interpreter error messages
+% such as "dictfull".
+
+% A homemade font, used only for font substitution.
+ 
+/Ugly                           (uglyr.gsf)     /StandardEncoding 4200000 ;
+
+% Some Linguist fonts (including some not distributed with AutoCAD)
+
+/CityBlueprint                  (cibt____.pfb)  null              5002674 ;
+/CountryBlueprint               (cobt____.pfb)  null              5002675 ;
+/EuroRoman                      (eur_____.pfb)  null              5002676 ;
+/EuroRoman-Oblique              (euro____.pfb)  null              5002677 ;
+/Romantic                       (rom_____.pfb)  null              5002534 ;
+/Romantic-Bold                  (romb____.pfb)  null              5002535 ;
+/Romantic-Italic                (romi____.pfb)  null              5002536 ;
+/SansSerif                      (sas_____.pfb)  null              5002530 ;
+/SansSerif-Bold                 (sasb____.pfb)  null              5002531 ;
+/SansSerif-BoldOblique          (sasbo___.pfb)  null              5002533 ;
+/SansSerif-Oblique              (saso____.pfb)  null              5003532 ;
+/SuperFrench                    (suf_____.pfb)  null              5002559 ;
+/Technic                        (te______.pfb)  null              5002671 ;
+/Technic-Bold                   (teb_____.pfb)  null              5002672 ;
+/Technic-Light                  (tel_____.pfb)  null              5002673 ;
+/PanRoman                       (par_____.pfb)  null              5002548 ;
+
+% The next set are not tested by Autodesk, and are included as a convenience
+% only; to use these fonts, remove the percent sign from the beginning of the
+% line. 
+%/TbilisiText                   (tbt_____.pfb)  null              5002517 ;
+%/TbilisiCaps                   (tbc_____.pfb)  null              5002518 ;
+%/Hebraica                      (he______.pfb)  null              5002521 ;
+%/GraecaOblique                 (gro_____.pfb)  null              5002523 ;
+%/Graeca                        (gr______.pfb)  null              5002524 ;
+%/IPAsans                       (ipa_____.pfb)  null              5002526 ;
+%/IPAKiel                       (ipak____.pfb)  null              5002527 ;
+%/IPAKiel-Bold                  (ipakb___.pfb)  null              5002528 ;
+%/AradLevelVI                   (arlvi___.pfb)  null              5002537 ;
+%/TransCyrillic                 (trc_____.pfb)  null              5002539 ;
+%/TransCyrillic-Bold            (trcb____.pfb)  null              5002540 ;
+%/TransCyrillic-Italic          (trci____.pfb)  null              5002541 ;
+%/TransCyrillic-BoldItalic      (trcbi___.pfb)  null              5002542 ;
+%/TransCyrillicSans             (trcs____.pfb)  null              5002543 ;
+%/TransCyrillicSans-Bold        (trcsb___.pfb)  null              5002544 ;
+%/TransCyrillicSans-Oblique     (trcso___.pfb)  null              5002545 ;
+%/TransCyrillicSans-BoldOblique (trcsbo__.pfb)  null              5002546 ;
+
+%/Armenian                      (ar______.pfb)  null              5002547 ;
+%/Semitica                      (se______.pfb)  null              5002550 ;
+%/SemiticaBold                  (seb_____.pfb)  null              5002551 ;
+%/SemiticaItalic                (sei_____.pfb)  null              5002552 ;
+%/Romance                       (ro______.pfb)  null              5002556 ;
+%/RomanceBold                   (rob_____.pfb)  null              5002557 ;
+%/RomanceItalic                 (roi_____.pfb)  null              5002558 ;
+
+%/NewSeoul                      (nes_____.pfb)  null              5002560 ;
+%/HiGwangJu                     (higj____.pfb)  null              5002561 ;
+%/HiInchon                      (hii_____.pfb)  null              5002562 ;
+%/NewHiPusan                    (nehp____.pfb)  null              5002563 ;
+%/NewJeju                       (nej_____.pfb)  null              5002564 ;
+%/Laotian                       (la______.pfb)  null              5002670 ;
+%/Tibetan                       (ti______.pfb)  null              5002679 ;
+%/Phatphong-Bold                (phb_____.pfb)  null              5002697 ;
+%/Phatphong-Italic              (phi_____.pfb)  null              5002698 ;
+%/Phatphong-BoldItalic          (phbi____.pfb)  null              5002699 ;
+%/HindiSanskrit                 (his_____.pfb)  null              5002700 ;
+%/Gujarati                      (gu______.pfb)  null              5002701 ;
+%/Sukanya-Bold                  (sub_____.pfb)  null              5002703 ;
+%/NaayHaang-Bold                (nahb____.pfb)  null              5002704 ;
+%/NaayHaang-Italic              (nahi____.pfb)  null              5002705 ;
+%/NaayHaang-BoldItalic          (nahbi___.pfb)  null              5002706 ;
+%/KhunKrit-Bold                 (khkb____.pfb)  null              5002707 ;
+%/KhunKrit-Italic               (khki____.pfb)  null              5002708 ;
+%/KhunKrit-BoldItalic           (khkbi___.pfb)  null              5002709 ;
+%/Sukanya                       (su______.pfb)  null              5002710 ;
+%/NaayHaang                     (nah_____.pfb)  null              5002711 ;
+%/Ayudhya                       (ay______.pfb)  null              5002712 ;
+%/KhunKrit                      (khk_____.pfb)  null              5002713 ;
+%/ChangMai                      (chm_____.pfb)  null              5002714 ;
+%/Phatphong                     (ph______.pfb)  null              5002715 ;
+%/Thonburi                      (th______.pfb)  null              5002716 ;
+%/Bangkok                       (ba______.pfb)  null              5002717 ;
+%/AyudhyaBold                   (ayb_____.pfb)  null              5002718 ;
+%/ChiangMaiBold                 (chmb____.pfb)  null              5002719 ;
+%/VinaBook                      (vib_____.pfb)  null              5002720 ;
+%/VinaChan                      (vic_____.pfb)  null              5002721 ;
+%/VinaSans                      (vis_____.pfb)  null              5002722 ;
+%/VinaPala                      (vip_____.pfb)  null              5002723 ;
+%/VinaRoman                     (vir_____.pfb)  null              5002724 ;
+%/AksarJhar                     (akj_____.pfb)  null              5010401 ;
+
+
+
+
+
+% Adobe Type 1 fonts.  The following, which reside in a directory named
+% on the ACAD path, are binary Adobe fonts purchased by the user and
+% loaded on the system.  Users of Adobe Type Manager may simply include the
+% directory where its fonts are kept in the ACAD path.
+
+%  Fonts included with Adobe Type Manager
+
+/Courier-Bold                 (cob_____.pfb)     /StandardEncoding 27058 ;
+/Courier-BoldOblique          (cobo____.pfb)     /StandardEncoding 27068 ;
+/Courier                      (com_____.pfb)     /StandardEncoding 27077 ;
+/Courier-Oblique              (coo_____.pfb)     /StandardEncoding 27082 ;
+/Helvetica                    (hv______.pfb)     /StandardEncoding 28352 ;
+/Helvetica-Oblique            (hvo_____.pfb)     /StandardEncoding 28362 ;
+/Helvetica-Bold               (hvb_____.pfb)     /StandardEncoding 28357 ;
+/Helvetica-BoldOblique        (hvbo____.pfb)     /StandardEncoding 28371 ;
+/Symbol                       (sy______.pfb)     null              27004 ;
+/Times-Bold                   (tib_____.pfb)     /StandardEncoding 28417 ;
+/Times-BoldItalic             (tibi____.pfb)     /StandardEncoding 28425 ;
+/Times-Italic                 (tii_____.pfb)     /StandardEncoding 28427 ;
+/Times-Roman                  (tir_____.pfb)     /StandardEncoding 28416 ;
+
+%  Fonts in the Adobe Plus Pack
+
+/AvantGarde-Demi              (agd_____.pfb)     /StandardEncoding 27044 ;
+/AvantGarde-DemiOblique       (agdo____.pfb)     /StandardEncoding 27049 ;
+/AvantGarde-Book              (agw_____.pfb)     /StandardEncoding 27030 ;
+/AvantGarde-BookOblique       (agwo____.pfb)     /StandardEncoding 27035 ;
+/Bookman-Demi                 (bkd_____.pfb)     /StandardEncoding 26183 ;
+/Bookman-DemiItalic           (bkdi____.pfb)     /StandardEncoding 26184 ;
+/Bookman-Light                (bkl_____.pfb)     /StandardEncoding 26185 ;
+/Bookman-LightItalic          (bkli____.pfb)     /StandardEncoding 26186 ;
+/Helvetica-Narrow             (hvn_____.pfb)     /StandardEncoding 28380 ;
+/Helvetica-Narrow-Bold        (hvnb____.pfb)     /StandardEncoding 28398 ;
+/Helvetica-Narrow-BoldOblique (hvnbo___.pfb)     /StandardEncoding 28407 ;
+/Helvetica-Narrow-Oblique     (hvno____.pfb)     /StandardEncoding 28389 ;
+/NewCenturySchlbk-Bold        (ncb_____.pfb)     /StandardEncoding 26359 ;
+/NewCenturySchlbk-BoldItalic  (ncbi____.pfb)     /StandardEncoding 26360 ;
+/NewCenturySchlbk-Italic      (nci_____.pfb)     /StandardEncoding 26361 ;
+/NewCenturySchlbk-Roman       (ncr_____.pfb)     /StandardEncoding 26362 ;
+/Palatino-Bold                (pob_____.pfb)     /StandardEncoding 31793 ;
+/Palatino-BoldItalic          (pobi____.pfb)     /StandardEncoding 31799 ;
+/Palatino-Italic              (poi_____.pfb)     /StandardEncoding 31796 ;
+/Palatino-Roman               (por_____.pfb)     /StandardEncoding 31790 ;
+/ZapfChancery-MediumItalic    (zcmi____.pfb)     /StandardEncoding 31482 ;
+/ZapfDingbats                 (zd______.pfb)     null              26200 ;
+
+%  Fonts in Adobe Type Set 1
+
+/Bodoni-Poster                (bdps____.pfb)     /StandardEncoding 31547 ;
+/Cottonwood                   (c_______.pfb)     /StandardEncoding 27255 ;
+/FreestyleScript              (fs______.pfb)     /StandardEncoding  6289 ;
+/Hobo                         (ho______.pfb)     /StandardEncoding  6174 ;
+/Linotext                     (lx______.pfb)     /StandardEncoding 22835 ;
+/Trajan-Regular               (tjrg____.pfb)     /StandardEncoding 27158 ;
+/VAGRounded-Bold              (vrb_____.pfb)     /StandardEncoding 22942 ;
+
+%  **  End Adobe Fonts **
+
+
+ 
+
+

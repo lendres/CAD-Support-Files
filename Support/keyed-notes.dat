@@ -1,0 +1,63 @@
+This file contains the data used by the KEYED-NOTES program.  The data in this file must take the
+following convention.  The [] represent the type of data that must be found on that line.
+
+block_name		[string]
+offset_ins_lead_start	[real]
+number_of_attributes	[integer]
+attribute_prompt	[string]
+attribute_prompt...	[string]
+
+The block_name must be written exactly as the block is named and the block must be found within the 
+search path of AutoCAD.
+
+The offset_ins_lead_start is the distance, measured horizontall, from the insertion point of the block 
+to the start of the leader measured at a 1:1 scale.  This number should read to 12 significant figures.  See
+existing listings for examples.
+
+The number of lines of attribute_prompts has to exactly match the number listed on the 
+number_of_attributes line.  Do not include punctuation before or after an attribute_prompt.  Capatilize
+the first word, but none of the others.  See existing listings for examples.
+
+Lines can be skipped and spaces before and after (not in the middle of) a line are ignored.  
+Tabs are also ignored before and after entries.
+
+KEYED-NOTES
+Copyright 1998-2000 by Lance A. Endres
+
+
+
+CONN_TO_EXIST
+	0.082519530000
+	0
+
+KEYED_NOTE
+	0.144205729167
+	1
+	Keyed note
+
+EQUIP_TAG
+	0.232502000000
+	2
+	Equipment Tag
+	Equipment Number
+
+TAG_ID
+	0.156250000000
+	1
+	Tag ID
+
+DEMO_NOTE
+	0.134213211100
+	1
+	Tag ID
+
+FIXTURE_TAG
+        0.182510940000
+	1
+	Fixture tag
+
+CIRCLE_TAG
+	0.131621580000
+	1
+	Tag ID
+

@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<!--
+Warning! Do not edit the contents of this file.
+If you attempt to edit this file using an XML editor, you could lose customization and migration functionality.
+If you need to change information in the customization file, use the Customize User Interface dialog box in the product.
+To access the Customize User Interface dialog box, click the Tools menu > Customize > Interface, or enter CUI on the command line. 
+-->
+<CustSection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileVersion MajorVersion="0" MinorVersion="1" IncrementalVersion="3" UserVersion="1" />
+  <Header>
+    <CommonConfiguration>
+      <CommonItems>
+        <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+      </CommonItems>
+    </CommonConfiguration>
+    <WorkspaceRoot>
+      <WorkspaceConfigRoot />
+    </WorkspaceRoot>
+  </Header>
+  <MenuGroup Name="LAE">
+    <MacroGroup Name="LAEMacros">
+      <MenuMacro UID="ID_Tracking">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0002">A Temporary track point</Name>
+          <Command>_tt  </Command>
+          <HelpString xlate="true" UID="XLS_0091">Creates a temporary point used by Osnaps:  TT</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_From">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0004">F From</Name>
+          <Command>_from  </Command>
+          <HelpString xlate="true" UID="XLS_0075">Locates a point offset from a reference point within a command:  FROM</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointFilx">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0007">.X</Name>
+          <Command>.X  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointFily">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0009">.Y</Name>
+          <Command>.Y  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointFilz">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0011">.Z</Name>
+          <Command>.Z  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointFixy">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0013">.XY</Name>
+          <Command>.XY  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointFixz">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0015">.XZ</Name>
+          <Command>.XZ  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_PointFiyz">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0017">.YZ</Name>
+          <Command>.YZ  </Command>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapEndp">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0019">E Endpoint</Name>
+          <Command>_endp  </Command>
+          <HelpString xlate="true" UID="XLS_0079">Snaps to the closest endpoint of an object:  ENDP</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapMidp">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0021">X Midpoint</Name>
+          <Command>_mid  </Command>
+          <HelpString xlate="true" UID="XLS_0083">Snaps to the midpoint of an object:  MID</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapInte">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0023">V Intersection</Name>
+          <Command>_int  </Command>
+          <HelpString xlate="true" UID="XLS_0082">Snaps to the intersection of two objects:  INT</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapAppa">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0025">P Apparent Intersect</Name>
+          <Command>_appint  </Command>
+          <HelpString xlate="true" UID="XLS_0077">Snaps to the apparent intersection of two objects:  APPINT</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapExte">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0027">W Extension</Name>
+          <Command>_ext  </Command>
+          <HelpString xlate="true" UID="XLS_0080">Snaps to the phantom extension of an arc or line:  EXT</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapCent">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0029">C Center</Name>
+          <Command>_cen  </Command>
+          <HelpString xlate="true" UID="XLS_0078">Snaps to the center of an arc, circle, ellipse, or elliptical arc:  CEN</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapQuad">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0031">Q Quadrant</Name>
+          <Command>_qua  </Command>
+          <HelpString xlate="true" UID="XLS_0089">Snaps to a quadrant point of an arc, circle, ellipse, or elliptical arc:  QUA</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapTang">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0033">T Tangent</Name>
+          <Command>_tan  </Command>
+          <HelpString xlate="true" UID="XLS_0090">Snaps to the tangent of an arc, circle, ellipse, elliptical arc, or spline:  TAN</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapPerp">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0035">G Perpendicular</Name>
+          <Command>_per  </Command>
+          <HelpString xlate="true" UID="XLS_0088">Snaps to a point perpendicular to an object:  PER</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapPara">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0037">Z Parallel</Name>
+          <Command>_par  </Command>
+          <HelpString xlate="true" UID="XLS_0087">Snaps parallel to a specified line:  PAR</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapNode">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0039">D Node</Name>
+          <Command>_nod  </Command>
+          <HelpString xlate="true" UID="XLS_0085">Snaps to a point object:  NOD</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapInse">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0041">S Insert</Name>
+          <Command>_ins  </Command>
+          <HelpString xlate="true" UID="XLS_0081">Snaps to the insertion point of objects such as text, blocks, or attributes:  INS</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapNear">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0043">R Nearest</Name>
+          <Command>_nea  </Command>
+          <HelpString xlate="true" UID="XLS_0084">Snaps to the nearest point on an object:  NEA</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_OsnapNone">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0045">N None</Name>
+          <Command>_non  </Command>
+          <HelpString xlate="true" UID="XLS_0086">Suppresses running object snap for the current selection:  NON</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Osnap">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0047">O Osnap Settings...</Name>
+          <Command>'_+dsettings 2 </Command>
+          <HelpString xlate="true" UID="XLS_0076">Sets running object snap modes:  OSNAP</HelpString>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Object_Snap_Settings_0">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0050">Object Snap Settings</Name>
+          <Command>'_+dsettings 2  </Command>
+          <SmallImage Name="rcdata_16_osnap" />
+          <LargeImage Name="rcdata_16_osnap" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomExten">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0052">Zoom Extents</Name>
+          <Command>'_zoom _e  </Command>
+          <SmallImage Name="rcdata_16_zooext" />
+          <LargeImage Name="rcdata_16_zooext" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomIn">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0054">Zoom In</Name>
+          <Command>'_zoom 2x  </Command>
+          <SmallImage Name="rcdata_16_zooin" />
+          <LargeImage Name="rcdata_16_zooin" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomOut">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0056">Zoom Out</Name>
+          <Command>'_zoom .5x  </Command>
+          <SmallImage Name="rcdata_16_zooout" />
+          <LargeImage Name="rcdata_16_zooout" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Zoom_Previous_0">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0058">Zoom Previous</Name>
+          <Command>'_zoom _p  </Command>
+          <SmallImage Name="rcdata_16_zoopre" />
+          <LargeImage Name="rcdata_16_zoopre" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_ZoomWindo">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0060">Zoom Window</Name>
+          <Command>'_zoom _w  </Command>
+          <SmallImage Name="rcdata_16_zoowin" />
+          <LargeImage Name="rcdata_16_zoowin" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Pan_Realtime_0">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0062">Pan Realtime</Name>
+          <Command>'_pan  </Command>
+          <SmallImage Name="rcdata_16_rtpan" />
+          <LargeImage Name="rcdata_16_rtpan" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_3dorbit_0">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0064">3D Orbit</Name>
+          <Command>'_3dorbit  </Command>
+          <SmallImage Name="rcdata_16_3dorbit" />
+          <LargeImage Name="rcdata_16_3dorbit" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Fixednend">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0067">Fixed Support</Name>
+          <Command>^C^C^P(setq INS_NAME "Fixed Support" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P </Command>
+          <SmallImage Name="fixedend" />
+          <LargeImage Name="fixedend" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Pinnedend">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0069">Pinned Support</Name>
+          <Command>^C^C^P(setq INS_NAME "Pin Support" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P </Command>
+          <SmallImage Name="pinsupport" />
+          <LargeImage Name="pinsupport" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Rollerend">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0071">Roller Support</Name>
+          <Command>^C^C^P(setq INS_NAME "Roller Support" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P </Command>
+          <SmallImage Name="rollersupport" />
+          <LargeImage Name="rollersupport" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ID_Beam1">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0073">Beam 1</Name>
+          <Command>^C^C^P(setq INS_NAME "Beam 1" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P </Command>
+          <SmallImage Name="beam1" />
+          <LargeImage Name="beam1" />
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="MMU_0037">
+        <Macro type="Any">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0092">CTRL+D</Name>
+          <Command>^O </Command>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <AcceleratorRoot>
+        <MenuAccelerator UID="MAU_0001">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Accelerator>
+            <KeyCombo accKeys="CTRL" AccelChar="D" bUseVirtual="false" />
+            <MenuItem>
+              <MacroRef MenuMacroID="MMU_0037" />
+            </MenuItem>
+          </Accelerator>
+        </MenuAccelerator>
+      </AcceleratorRoot>
+      <OverrideRoot />
+      <MouseButtonRoot />
+      <DigitizerButtonRoot />
+      <PopMenuRoot>
+        <PopMenu hasDiesel="false" UID="PMU_0002">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Alias>POP0</Alias>
+          <Alias>SNAP</Alias>
+          <Name xlate="true" UID="XLS_0001">&amp;Object Snap Cursor Menu</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0001">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0003" xlate="true">&amp;A Temporary track point</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Tracking" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0002">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0005" xlate="true">&amp;F From</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_From" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuRef pUID="ID_MnPointFi" UID="PMRU_0001">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </PopMenuRef>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0010">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0011">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0020" xlate="true">&amp;E Endpoint</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapEndp" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0012">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0022" xlate="true">&amp;X Midpoint</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapMidp" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0013">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0024" xlate="true">&amp;V Intersection</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapInte" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0014">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0026" xlate="true">&amp;P Apparent Intersect</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapAppa" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0015">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0028" xlate="true">&amp;W Extension</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapExte" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0016">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0017">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0030" xlate="true">&amp;C Center</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapCent" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0018">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0032" xlate="true">&amp;Q Quadrant</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapQuad" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0019">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0034" xlate="true">&amp;T Tangent</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapTang" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0020">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0021">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0036" xlate="true">&amp;G Perpendicular</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapPerp" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0022">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0038" xlate="true">&amp;Z Parallel</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapPara" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0023">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0040" xlate="true">&amp;D Node</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapNode" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0024">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0042" xlate="true">&amp;S Insert</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapInse" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0025">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0044" xlate="true">&amp;R Nearest</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapNear" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0026">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0046" xlate="true">&amp;N None</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_OsnapNone" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0027">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0028">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0048" xlate="true">&amp;O Osnap Settings...</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Osnap" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu hasDiesel="false" UID="ID_MnPointFi">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Name xlate="true" UID="XLS_0006">&amp;L Point Filters</Name>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0003">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0008" xlate="true">.X</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointFilx" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0004">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0010" xlate="true">.Y</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointFily" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0005">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0012" xlate="true">.Z</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointFilz" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true" hasDiesel="false" UID="PMIU_0006">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0007">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0014" xlate="true">.XY</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointFixy" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0008">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0016" xlate="true">.XZ</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointFixz" />
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="false" hasDiesel="false" UID="PMIU_0009">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <NameRef UID="XLS_0018" xlate="true">.YZ</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_PointFiyz" />
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+      </PopMenuRoot>
+      <ToolbarRoot>
+        <Toolbar ToolbarOrient="right" ToolbarVisible="show" xval="0" yval="0" rows="1" UID="ID_TbZoom_le">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Alias>TB_ZOOM_LE</Alias>
+          <Alias>ZOOM_LE</Alias>
+          <Name xlate="true" UID="XLS_0049">Zoom LE</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0001">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0051">Object Snap Settings</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Object_Snap_Settings_0" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0002">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0003">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0053">Zoom Extents</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomExten" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0004">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0005">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0055">Zoom In</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomIn" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0006">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0057">Zoom Out</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomOut" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0007">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0008">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0059">Zoom Previous</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Zoom_Previous_0" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0009">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0061">Zoom Window</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_ZoomWindo" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0010">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0011">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0063">Pan Realtime</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Pan_Realtime_0" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0012">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0013">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0065">3D Orbit</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_3dorbit_0" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="show" xval="100" yval="100" rows="1" UID="ID_structanal">
+          <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          <Alias>TB_STRUCTANAL</Alias>
+          <Alias>STRUCTANAL</Alias>
+          <Alias>Structural_Analysis</Alias>
+          <Name xlate="true" UID="XLS_0066">Structural Analysis</Name>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0014">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0068">Fixed Support</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Fixednend" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0015">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0070">Pinned Support</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Pinnedend" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0016">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0072">Roller Support</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Rollerend" />
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true" UID="TBBU_0017">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="false" UID="TBBU_0018">
+            <Revision MajorVersion="16" MinorVersion="2" UserVersion="1" />
+            <Name xlate="true" UID="XLS_0074">Beam 1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ID_Beam1" />
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
+      <ScreenMenuRoot />
+      <ImageMenuRoot />
+      <TabletMenuRoot />
+    </MenuRoot>
+  </MenuGroup>
+</CustSection>

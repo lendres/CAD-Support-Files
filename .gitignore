@@ -1,11 +1,10 @@
 # Compiled
-*.elc
-
-# Packaging
-.cask
 
 # Backup files
 *~
+*.bak
+Archive/
 
-# Undo-tree save-files
-*.~undo-tree
+# Drawing locks
+*.dwl
+*.dwl2

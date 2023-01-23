@@ -1,0 +1,78 @@
+                                    MastrMnd Document
+                                       Version 2.5
+
+                                 Written by Luke Livermore
+                                     For Design Point
+                            Visit our web site: www.designpt.com
+
+
+This program file was designed and written specifically for interupting the
+daily grind of grunting AutoCAD drawings.  This is an AutoLISP and DCL version
+of the classic logic game "Master Mind".
+
+
+1) To use this or any AutoLISP file (*.lsp), you must first load the file.
+   You can load this lisp file by typing at the command prompt:
+      Command: (load "MastrMnd")
+
+
+2) Master Mind
+      Command: DP_MASTER_MIND
+
+      Shorthand command is:
+      Command: MM
+
+
+3) The object of the game
+
+   The master has chosen 4 of 8 different colors.  It is your challenge
+   to correctly identify which 4 colors and in which position each color
+   resides.
+
+   Good luck.
+
+
+4) How to Play
+
+   When the MasterMind dialog is displayed, pick a color from the row of
+   colored image tiles at the bottom.
+
+   Then pick on an empty box in the first row.  Your color should fill the
+   selected box.
+
+   Make another color selection and repeat the process until you're satified
+   with the row of colors you chosen.  Then pick the 'Guess' button.
+
+   The master will then display smaller black and/or white pegs at the right
+   of the user guess row.  Black pegs indicate the right color guess, but in
+   the wrong position.  White pegs indicate the right choice in the correct
+   position.
+
+   Note: The position of the Black and White guess indication pegs, have NO
+   bearing on the position of the user guesses.  There is no correlation
+   between the position of a black or white peg and the position of a color
+   choice.  The indication pegs only indicate that one or more color guesses
+   was correct.
+
+   You only get eight chance to beat the master.  If you can not guess
+   correctly within eight, the master will display the hand.  You may at
+   any time end the game by choosing the 'Reveal' button.
+
+   Restart will clear the game and the master will pick a new set of colors.
+
+
+5) This is FREEWARE.  It is not intended for sale of any kind, if you paid
+   for this function please notify me.  This may be freely distributed as long
+   as the following two (3) files are bundled together:
+       a) MASTRMND.LSP
+       b) MASTRMND.DCL
+       c) MASTRMND.DOC
+
+   Because this is FREEWARE, there is no support for this funcion, so please
+   conduct yourself accordingly.  Even though lengths have been taken to ensure
+   this function is bug free, in my experience bugs only crop up after software
+   is made available for use.  Respond to the email address luke@designpt.com
+   to report any known bugs, and I'll do what I can if I think it's warrented.
+
+
+*  Reference to AutoCAD and AutoLISP are registered trade marks of Autodesk, Inc.

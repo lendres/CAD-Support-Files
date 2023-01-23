@@ -1,0 +1,103 @@
+//
+//   Begin AutoCAD Pull-down Menus
+//
+
+***MENUGROUP=LAE
+
+// NOTE: THIS IS HERE FOR REFERENCE.  I HAVEN'T FOUND A WAY TO OVERRIDE THE POP0
+// LOCATED IN THE ACAD.MNS FILE.
+***POP0
+**SNAP
+               [&Object Snap Cursor Menu]
+ID_Tracking    [&A Temporary track point]_tt 
+ID_From        [&F From]_from 
+ID_MnPointFi   [->&L Point Filters]
+ID_PointFilx     [.X].X 
+ID_PointFily     [.Y].Y 
+ID_PointFilz     [.Z].Z 
+                 [--]
+ID_PointFixy     [.XY].XY 
+ID_PointFixz     [.XZ].XZ 
+ID_PointFiyz     [<-.YZ].YZ 
+               [--]
+ID_OsnapEndp   [&E Endpoint]_endp 
+ID_OsnapMidp   [&X Midpoint]_mid 
+ID_OsnapInte   [&V Intersection]_int 
+ID_OsnapAppa   [&P Apparent Intersect]_appint 
+ID_OsnapExte   [&W Extension]_ext 
+               [--]
+ID_OsnapCent   [&C Center]_cen 
+ID_OsnapQuad   [&Q Quadrant]_qua 
+ID_OsnapTang   [&T Tangent]_tan 
+               [--]
+ID_OsnapPerp   [&G Perpendicular]_per 
+ID_OsnapPara   [&Z Parallel]_par 
+ID_OsnapNode   [&D Node]_nod 
+ID_OsnapInse   [&S Insert]_ins 
+ID_OsnapNear   [&R Nearest]_nea 
+ID_OsnapNone   [&N None]_non 
+               [--]
+ID_Osnap       [&O Osnap Settings...]'_+dsettings 2
+
+
+***TOOLBARS
+**TB_ZOOM_LE
+**ZOOM_LE
+ID_TbZoom_le   			[_Toolbar("Zoom LE", _Right, _Show, 0, 0, 1)]
+ID_Object_Snap_Settings_0 	[_Button("Object Snap Settings", "rcdata_16_osnap", "rcdata_16_osnap")]'_+dsettings 2 
+               			[--]
+ID_ZoomExten   			[_Button("Zoom Extents", "rcdata_16_zooext", "rcdata_16_zooext")]'_zoom _e 
+               			[--]
+ID_ZoomIn      			[_Button("Zoom In", "rcdata_16_zooin", "rcdata_16_zooin")]'_zoom 2x 
+ID_ZoomOut     			[_Button("Zoom Out", "rcdata_16_zooout", "rcdata_16_zooout")]'_zoom .5x 
+               			[--]
+ID_Zoom_Previous_0 		[_Button("Zoom Previous", "rcdata_16_zoopre", "rcdata_16_zoopre")]'_zoom _p 
+ID_ZoomWindo   			[_Button("Zoom Window", "rcdata_16_zoowin", "rcdata_16_zoowin")]'_zoom _w 
+               			[--]
+ID_Pan_Realtime_0 		[_Button("Pan Realtime", "rcdata_16_rtpan", "rcdata_16_rtpan")]'_pan 
+               			[--]
+ID_3dorbit_0   			[_Button("3D Orbit", "rcdata_16_3dorbit", "rcdata_16_3dorbit")]'_3dorbit 
+
+
+**TB_STRUCTANAL
+**STRUCTANAL
+ID_structanal  			[_Toolbar("Structural Analysis", _Floating, _Show, 100, 100, 1)]
+ID_Fixednend    		[_Button("Fixed Support", "fixedend", "fixedend")]^C^C^P(setq INS_NAME "Fixed Support" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P
+ID_Pinnedend    		[_Button("Pinned Support", "pinsupport", "pinsupport")]^C^C^P(setq INS_NAME "Pin Support" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P
+ID_Rollerend    		[_Button("Roller Support", "rollersupport", "rollersupport")]^C^C^P(setq INS_NAME "Roller Support" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P
+               			[--]
+ID_Beam1    			[_Button("Beam 1", "beam1", "beam1")]^C^C^P(setq INS_NAME "Beam 1" INS_SCALE "dimscale" ROT_ANG "rotate")(princ);ADV-INSERT;^P
+
+
+***HELPSTRINGS
+ID_From       [Locates a point offset from a reference point within a command:  FROM]
+ID_Osnap      [Sets running object snap modes:  OSNAP]
+ID_OsnapAppa  [Snaps to the apparent intersection of two objects:  APPINT]
+ID_OsnapCent  [Snaps to the center of an arc, circle, ellipse, or elliptical arc:  CEN]
+ID_OsnapEndp  [Snaps to the closest endpoint of an object:  ENDP]
+ID_OsnapExte  [Snaps to the phantom extension of an arc or line:  EXT]
+ID_OsnapInse  [Snaps to the insertion point of objects such as text, blocks, or attributes:  INS]
+ID_OsnapInte  [Snaps to the intersection of two objects:  INT]
+ID_OsnapMidp  [Snaps to the midpoint of an object:  MID]
+ID_OsnapNear  [Snaps to the nearest point on an object:  NEA]
+ID_OsnapNode  [Snaps to a point object:  NOD]
+ID_OsnapNone  [Suppresses running object snap for the current selection:  NON]
+ID_OsnapPara  [Snaps parallel to a specified line:  PAR]
+ID_OsnapPerp  [Snaps to a point perpendicular to an object:  PER]
+ID_OsnapQuad  [Snaps to a quadrant point of an arc, circle, ellipse, or elliptical arc:  QUA]
+ID_OsnapTang  [Snaps to the tangent of an arc, circle, ellipse, elliptical arc, or spline:  TAN]
+ID_Tracking   [Creates a temporary point used by Osnaps:  TT]
+
+
+//
+//  Keyboard Accelerators
+//
+//  If a keyboard accelerator is preceded by an ID string that references a menu item
+//  in a pull-down menu, then the keyboard accelerator will run the command referenced
+//  by that menu item.  The additonal keyword "TOOLBAR+" restricts the same search to the 
+//  Toolbar section while "INTERNAL+" matches those commands provided on the Commands
+//  page of the Customize dialog.
+//
+***ACCELERATORS
+// Ortho mode.
+[CONTROL+"D"]^O

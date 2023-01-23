@@ -1,0 +1,13 @@
+;;; Add plotter/printer names to this file exactly as it is used in the
+;;; Plotting Templates.dwt drawing layout tabs.  Beginning and ending
+;;; spaces and tabs are ignored.  Line spacing is ignored also.  If a
+;;; line begins with a semicolon it is ignored.
+
+;;; Tabs in the Plotting Templates.dwt template to be used with this
+;;; program must be in the format "PrinterName_8.5x11_Port" or
+;;; "PrinterName_8.5x11_Land", where PrinterName is the name found in 
+;;; this file and an underscore is a space.
+
+
+ColorPro CAD
+HP 5000 LaserJet
