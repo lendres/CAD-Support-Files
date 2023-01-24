@@ -34,6 +34,13 @@
 ;;; NOTE: When debugging this file, be sure to include a reference to the path that the source
 ;;;       dcl file is located.  I.e. c:\storage\programming\lisp source files\
 
+(load "ai_utils")
+(load "setupworker")
+(load "layouttools")
+(load "createdimstyles")
+(load "le_utils")
+(vl-load-com)
+
 (defun C:SETUP (/ ADJ_FOR_PAPERS CMD CLAY DCL_ID DWG_SCALE EXPRT GENRE01 GENRE02 
                 GENRE03 GENRE04 GENRE05 GENRE06 IMP_LYTS L_UNITS L_UNITS_HOLDER LMBD1 
                 LMBD2 OSM P_SIZE RGMOD SET_LAYS SET_LMTS TEMP VL-ADOC
@@ -48,12 +55,11 @@
         OSM        (vla-getvariable VL-ADOC "osmode")
         DATAPREFIX "AppData/Setup_Data/"
   ) ;_ End setq
-  (vl-load-com)
   (vla-startundomark VL-ADOC)
   (mapcar 
     '(lambda (LMBD1 LMBD2) (vla-setvariable VL-ADOC LMBD1 LMBD2))
     (list "cmdecho" "regenmode" "expert")
-    (list 1 0 5)
+    (list 0 0 5)
   ) ;_ End mapcar
 
   ;;; Load dialog file and verify loading.
@@ -63,24 +69,23 @@
 
   ;;; Gather data from configuration file.
 
-  ;;; DWG_SCALE		Controls system variable "dimscale".
-  ;;; L_UNITS		Controls system variable "lunits" (arch / decimal / etc.).
-  ;;;    			Used to set the drawing units and to convert units for controlling
-  ;;;    			the dialog box.
-  ;;; SET_LMTS 		Determines if the user wants to set limits during the setup process.
-  ;;; SET_LAYS 		Determines if the user wants to import layers during the setup process.
-  ;;; IMP_LYTS 		Determines if the user wants to import layouts during the setup process.
-  ;;; P_SIZE   		Setting for the paper sized used (i.e. D or E size).
-  ;;; GENRE01		Import lighting layers.
-  ;;; GENRE02 		Import power layers.
-  ;;; GENRE03		Import HVAC layers.
-  ;;; GENRE04		Import pluming layers.
-  ;;; GENRE05		Import equipment layers.
-  ;;; GENRE06		Import general layers.
-  ;;; LAY_DATA		Path of last used layer data file.
-  ;;; DIM_PREC		Dimension precision to use.  LUPREC (precision displayed on screen) also uses this setting.
-  ;;; PLOT_UNTS		Plotting units, US Customary or System International (store value "uscust" / "si")
-  ;;; ADJ_FOR_PAPERS	Adjust dimensiions, etc. for making figures for papers.
+  ;;; DWG_SCALE	      Controls system variable "dimscale".
+  ;;; L_UNITS	        Controls system variable "lunits" (arch / decimal / etc.).
+  ;;;                 Used to set the drawing units and to convert units for controlling the dialog box.
+  ;;; SET_LMTS 	      Determines if the user wants to set limits during the setup process.
+  ;;; SET_LAYS 	      Determines if the user wants to import layers during the setup process.
+  ;;; IMP_LYTS 	      Determines if the user wants to import layouts during the setup process.
+  ;;; P_SIZE          Setting for the paper sized used (i.e. D or E size).
+  ;;; GENRE01	        Import lighting layers.
+  ;;; GENRE02         Import power layers.
+  ;;; GENRE03	        Import HVAC layers.
+  ;;; GENRE04	        Import pluming layers.
+  ;;; GENRE05	        Import equipment layers.
+  ;;; GENRE06         Import general layers.
+  ;;; LAY_DATA        Path of last used layer data file.
+  ;;; DIM_PREC        Dimension precision to use.  LUPREC (precision displayed on screen) also uses this setting.
+  ;;; PLOT_UNTS       Plotting units, US Customary or System International (store value "uscust" / "si")
+  ;;; ADJ_FOR_PAPERS  Adjust dimensiions, etc. for making figures for papers.
 
   (setq DWG_SCALE      (getcfg (strcat DATAPREFIX "Dwg_Scale"))
         L_UNITS        (getcfg (strcat DATAPREFIX "L_Units"))
@@ -117,7 +122,6 @@
   ;;; then use the ai_utils to convert is to a string for the dialog box using the
   ;;; current drawing units.  L_UNITS then has to be set to the current drawing units
   ;;; so that it is compatible with the new drawing scale format.
-
   (if (or (null DWG_SCALE) (= DWG_SCALE "")) 
     (setq DWG_SCALE "1")
     (setq  ;DWG_SCALE	(AI_RTOS (distof DWG_SCALE L_UNITS))
@@ -235,10 +239,7 @@
 
   ;;; Test for running setup.
   (if (= RUN_SETUP "Yes")
-    (progn
-      (load "setupworker")
       (SETUP)
-		)
   ) ;_ End if
 
   ;;; Exit.
@@ -263,10 +264,12 @@
     (mapcar '(lambda (TEMP) (mode_tile TEMP 0)) TOG_LIST)
     (mapcar '(lambda (TEMP) (mode_tile TEMP 1)) TOG_LIST)
   ) ;_ End if
+  
+  ;;; Silent exit.
+  (princ)
 ) ;_ End defun
 
-;;; Switch the status of the layout tiles when the import button is
-;;; toggled.
+;;; Switch the status of the layout tiles when the import button is toggled.
 (defun TOGGLE_PSIZES (TEMP) 
   (if (= TEMP "1") 
     (mapcar 
@@ -455,5 +458,3 @@
   (vla-endundomark VL-ADOC)
   (princ)
 ) ;_ End defun.
-
-(load "ai_utils")

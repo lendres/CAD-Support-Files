@@ -1,5 +1,7 @@
 ;;; Copyright Lance A. Endres
 
+(load "frozen-locked-layer")
+
 (defun C:ADDPSTYLES (/ ACADDOC CMD COL ENT1 ISXREF STYLSHEET VL-ENT1 VL-BLOCKS-REF XREFFOUND) 
   (vl-load-com)
   (setq CMD           (getvar "cmdecho")
@@ -268,7 +270,3 @@
   ) ;_ End vla-endundomark
   (princ)
 ) ;_ End defun
-
-;|«Visual LISP© Format Options»
-(72 4 40 2 T "End " 60 9 1 2 0 T T nil T)
-;*** DO NOT add text below the comment! ***|;

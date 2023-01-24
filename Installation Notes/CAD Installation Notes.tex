@@ -28,10 +28,6 @@
 \newcommand*{\templatedir}{\textcode{\textit{templates}}}
 
 \newcommand*{\rootpath}{\rootdir\tbs}
-\newcommand*{\supportpath}{\supportdir\tbs}
-\newcommand*{\userpath}{\userdir\tbs}
-\newcommand*{\plotstylepath}{\plotstyledir\tbs}
-\newcommand*{\templatepath}{\templatedir\tbs}
 %\newcommand*{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,17 +38,18 @@
 \begin{document}
 
 \chapter{Installation}
-\section{Introduction}
-
-\begin{tabular}{|l|l|}
-  \hline
-  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-  \rootdir & \textcode{C:\tbs{}Custom Program Files\tbs{}CAD Support Files\tbs{}} \\ \hline
-  \supportdir & \rootpath\textcode{Support} \\ \hline
-  \userdir & \rootpath\textcode{User Files} \\ \hline
-  \plotstyledir & \rootpath\textcode{Plot Styles} \\ \hline
-\end{tabular}
-
+\section{Directories}
+\begin{center}
+	\begin{tabular}{|l|l|}
+	  \hline
+	  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+	  \rootdir & \textcode{C:\tbs{}Custom Program Files\tbs{}CAD Support Files\tbs{}} \\ \hline
+	  \supportdir & \rootpath\textcode{Support} \\ \hline
+	  \userdir & \rootpath\textcode{User Files} \\ \hline
+	  \plotstyledir & \rootpath\textcode{Plot Styles} \\ \hline
+	  \templatedir & \rootpath\textcode{Templates} \\ \hline
+	\end{tabular}
+\end{center}
 
 \section{Command Aliases (PGP)}
 \begin{numberedlist}
@@ -75,8 +72,11 @@
     	\item Expand \textcode{Printer Support File Path}$\rightarrow$\textcode{Plot Style Table Search Path}
     	\item Add the \plotstyledir{} directory.
     \end{numberedlist}
+    \item Add the template files location.
     \begin{numberedlist}
-    	\item
+    	% C:\Users\Lance\AppData\Local\Gstarsoft\GstarCAD\R23\en-US\template\
+    	\item Expand \textcode{Template Settings}$\rightarrow$\textcode{Drawing Template File Location}
+    	\item Add the \templatedir{} directory.
     \end{numberedlist}
     \begin{numberedlist}
     	\item
@@ -111,9 +111,17 @@
 %\begin{plainlist}
 %	\item \textcode{BUTTON="Make\_Document"}
 %\end{plainlist}
+\section{Settings}
+\begin{bulletedlist}
+	\item Turn off \textit{Dynamic Input} (F12) or button at bottom.
+\end{bulletedlist}
 
 
 \chapter{Notes}
+\section{Using Customizations}
+The setup function requires a named plot style drawing to be open.
+
+\section{Programming and Debugging}
 \begin{bulletedlist}
 	\item \href{https://www.youtube.com/watch?v=Rrgx3TcXNzM}{Video on lisp debugging with GStar2023}
 \end{bulletedlist}

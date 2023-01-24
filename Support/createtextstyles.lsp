@@ -21,7 +21,7 @@
         VL-ADOC (vla-get-activedocument (vlax-get-acad-object))
         CMD     (vla-getvariable VL-ADOC "cmdecho")
   ) ;_ End setq
-  (setvar "cmdecho" 1)
+  (setvar "cmdecho" 0	)
 
   ;;; Establish constants for the text sizes.  These constants are the
   ;;; only location modifications are needed to change the height of fonts.

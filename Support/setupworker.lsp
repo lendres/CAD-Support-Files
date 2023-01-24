@@ -58,9 +58,8 @@
                 ) ;_ End mapcar
       ) ;_ End setq
 
-      ;;; Limits cannot be set in a layout if the margins or the paper are
-      ;;; showing.  If a layout besides model is active, turn off the margins
-      ;;; and paper.
+      ;;; Limits cannot be set in a layout if the margins or the paper are showing.  If a layout besides model
+      ;;; is active, turn off the margins and paper.
       (if (/= (vla-get-taborder (GET-CURRENT-LAYOUT)) 0) 
         (progn 
           (setq VL-PREF-DISPLAY     (vla-get-display 
