@@ -33,20 +33,6 @@
     (progn 
       (textscr)
       (command "_.-insert" "?" "")
-
-      ;;;	    (setq BLKDEF (tblnext "block" t))
-      ;;;	    (if	(and (= (logand 16 (cdr (assoc 70 BLKDEF))) 0)
-      ;;;		     (= (logand 4 (cdr (assoc 70 BLKDEF))) 0)
-      ;;;		) ;_ End and
-      ;;;		(princ (cdr (assoc 2 BLKDEF)))
-      ;;;	    ) ;_ End if
-      ;;;	    (while (setq BLKDEF (tblnext "block"))
-      ;;;		(if (and (= (logand 16 (cdr (assoc 70 BLKDEF))) 0)
-      ;;;			 (= (logand 4 (cdr (assoc 70 BLKDEF))) 0)
-      ;;;		    ) ;_ End and
-      ;;;		    (print (cdr (assoc 2 BLKDEF)))
-      ;;;		) ;_ End if
-      ;;;	    ) ;_ End while
     ) ;_ End progn
     (progn 
       (if (or (= N_INS_NAME "") (null N_INS_NAME)) 
