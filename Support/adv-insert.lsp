@@ -33,7 +33,7 @@
     (progn 
       (textscr)
       (command "_.-insert" "?" "")
-    ) ;_ End progn
+) ;_ End progn
     (progn 
       (if (or (= N_INS_NAME "") (null N_INS_NAME)) 
         (setq INS_NAME (getvar "insname"))
