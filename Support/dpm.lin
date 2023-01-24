@@ -1,5 +1,4 @@
 ;;; AutoCAD Linetype file
-
 *Hot_Water,Hot Water ----- HW ----- HW ----- HW -----
 A,2.0,-0.02,["HW",LINETYPE,S=0.007,R=0.0,X=0.0,Y=-0.0335],-0.153
 

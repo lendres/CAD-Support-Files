@@ -6,7 +6,7 @@
     (acad-push-dbmod)
     
 		;;; Establish maintain-ltscale reactor.
-    (mapcar 'load (list "maintain-ltscale.vlx"))
+    (mapcar 'load (list "maintain-ltscale"))
     (C:INIT-MAINTAIN-LTSCALE)
     (setvar "regenmode" 1)
 
@@ -20,123 +20,113 @@
 
 ;;; Autoload Functions
 
-(AUTOLOAD "adv-insert.vlx" '("in" "inn" "innr" "inr" "adv-insert"))
+(AUTOLOAD "adv-insert" '("in" "inn" "innr" "inr" "adv-insert"))
 
-(AUTOLOAD "addpstyles.vlx" '("addpstyles"))
+(AUTOLOAD "addpstyles" '("addpstyles"))
 
-(AUTOLOAD "angle.lsp" '("angle"))
+(AUTOLOAD "angle" '("angle"))
 
-(AUTOLOAD "arced.lsp" '("arced"))
+(AUTOLOAD "arced" '("arced"))
 
-(AUTOLOAD "arcleader.lsp" '("al"))
+(AUTOLOAD "arcleader" '("al"))
 
-(AUTOLOAD "asctext.lsp" '("asctext"))
+(AUTOLOAD "asctext" '("asctext"))
 
-(AUTOLOAD "autoortho.vlx"
-	  '("mirror_ortho_off"
-	    "mirror_ortho_on"
-	    "rotate_ortho_off"
-	    "rotate_ortho_on"
-	   )
-) ;_ End autoload
+(AUTOLOAD "autoortho" '("mirror_ortho_off" "mirror_ortho_on" "rotate_ortho_off" "rotate_ortho_on"))
 
-(AUTOLOAD "bgtoggle.fas" '("bgtoggle"))
+(AUTOLOAD "bgtoggle" '("bgtoggle"))
 
-(AUTOLOAD "blockscale.fas" '("blockscale"))
+(AUTOLOAD "blockscale" '("blockscale"))
 
-(AUTOLOAD "block-power-tools.vlx"
-	  '("rip-nent"
-	    "set-nent-color-bylayer"
-	    "set-block-color-bylayer"
-	    "all-blocks-color-bylayer"
-	   )
-) ;_ End AUTOLOAD
+(AUTOLOAD "block-power-tools" '("rip-nent" "set-nent-color-bylayer" "set-block-color-bylayer" "all-blocks-color-bylayer"))
 
-(AUTOLOAD "breaksnaps.fas" '("ba" "bz"))
+(AUTOLOAD "breaksnaps" '("ba" "bz"))
 
-(AUTOLOAD "change8x11.vlx" '("change8x11"))
+(AUTOLOAD "change8x11" '("change8x11"))
 
-(AUTOLOAD "color-bylayer.fas" '("color-bylayer"))
+(AUTOLOAD "color-bylayer" '("color-bylayer"))
 
-(AUTOLOAD "ddlayren.vlx" '("ddlayren"))
+(AUTOLOAD "createtextstyles" '("createtextstyles"))
 
-(AUTOLOAD "ddleutils.vlx" '("ddleutils" "layato"))
+(AUTOLOAD "ddlayren" '("ddlayren"))
 
-(AUTOLOAD "ddxrmod.vlx" '("ddxrmod"))
+(AUTOLOAD "ddleutils" '("ddleutils" "layato"))
 
-(AUTOLOAD "defext.fas" '("defext" "ndefext"))
+(AUTOLOAD "ddxrmod" '("ddxrmod"))
 
-(AUTOLOAD "demo.fas" '("demo"))
+(AUTOLOAD "defext" '("defext" "ndefext"))
 
-(AUTOLOAD "dlayer.fas" '("dlayer"))
+(AUTOLOAD "demo" '("demo"))
 
-(AUTOLOAD "drawinglog.fas" '("drawlog" "drawlogswexport"))
+(AUTOLOAD "dlayer" '("dlayer"))
 
-(AUTOLOAD "extract-text-to-file.vlx" '("extract-text-to-file"))
+(AUTOLOAD "drawinglog" '("drawlog" "drawlogswexport"))
 
-(AUTOLOAD "fastdists.fas" '("distend" "distper"))
+(AUTOLOAD "extract-text-to-file" '("extract-text-to-file"))
 
-(AUTOLOAD "fastflex.fas" '("efc" "efl" "efs" "fc" "fl" "fs"))
+(AUTOLOAD "fastdists" '("distend" "distper"))
 
-(AUTOLOAD "fastviews.fas" '("vr" "vs"))
+(AUTOLOAD "fastflex" '("efc" "efl" "efs" "fc" "fl" "fs"))
 
-(AUTOLOAD "fchamfer.lsp" '("fchamfer"))
+(AUTOLOAD "fastviews" '("vr" "vs"))
 
-(AUTOLOAD "gap.fas" '("gap"))
+(AUTOLOAD "fchamfer" '("fchamfer"))
 
-(AUTOLOAD "glue.fas" '("glue"))
+(AUTOLOAD "gap" '("gap"))
 
-(AUTOLOAD "keyed-notes.vlx" '("keyed-notes"))
+(AUTOLOAD "glue" '("glue"))
 
-(AUTOLOAD "leaders.vlx" '("ll" "ell"))
+(AUTOLOAD "keyed-notes" '("keyed-notes"))
 
-(AUTOLOAD "leroutines.fas"
-	  '("copy_mult"	"crstretch" "clean" "ucsob" "update"
-	    "linsb")
-) ;_ End autoload
+(AUTOLOAD "leaders" '("ll" "ell"))
 
-(AUTOLOAD "linemid.fas" '("linemid"))
+(AUTOLOAD "leroutines" '("copy_mult"	"crstretch" "clean" "ucsob" "update" "linsb"))
 
-(AUTOLOAD "maintain-ltscale.vlx" '("init-maintain-ltscale" "remove-maintain-ltscale"))
+(AUTOLOAD "linemid" '("linemid"))
 
-(AUTOLOAD "minsp.fas" '("minsp"))
+(AUTOLOAD "loadlinetypes" '("loadlinetypes"))
 
-(AUTOLOAD "MultiFileTool.lsp" '("mft"))
+(AUTOLOAD "maintain-ltscale" '("init-maintain-ltscale" "remove-maintain-ltscale"))
 
-(AUTOLOAD "number.vlx" '("number"))
+(AUTOLOAD "minsp" '("minsp"))
 
-(AUTOLOAD "ostoggle.fas" '("ostoggle"))
+(AUTOLOAD "MultiFileTool" '("mft"))
 
-(AUTOLOAD "pipelabel.vlx" '("pipelabel"))
+(AUTOLOAD "number" '("number"))
 
-(AUTOLOAD "sestext.vlx" '("sestext"))
+(AUTOLOAD "ostoggle" '("ostoggle"))
 
-(AUTOLOAD "ses_install.vlx" '("roam" "ses_install"))
+(AUTOLOAD "pipelabel" '("pipelabel"))
 
-(AUTOLOAD "setup.vlx" '("setup"))
+(AUTOLOAD "setup" '("setup"))
 
-(AUTOLOAD "space.fas" '("ms" "ps"))
+(AUTOLOAD "space" '("ms" "ps"))
 
-(AUTOLOAD "specs.fas" '("specs"))
+(AUTOLOAD "specs" '("specs"))
 
-(AUTOLOAD "toggletb.fas" '("all-tb-toggle"))
+(AUTOLOAD "toggletb" '("all-tb-toggle"))
 
-(AUTOLOAD "totallength.fas" '("totallength"))
+(AUTOLOAD "totallength" '("totallength"))
 
-(AUTOLOAD "txtlay.fas" '("dtext_layer" "mtext_layer"))
+(AUTOLOAD "txtlay" '("dtext_layer" "mtext_layer"))
 
-(AUTOLOAD "textblocks.fas" '("textblocks"))
+(AUTOLOAD "textblocks" '("textblocks"))
 
-(AUTOLOAD "tomtext.vlx" '("tomtext"))
+(AUTOLOAD "tomtext" '("tomtext"))
 
-(AUTOLOAD "trimp.fas" '("trimp"))
+(AUTOLOAD "trimp" '("trimp"))
 
-(AUTOLOAD "unmirror.fas" '("unmirror"))
+(AUTOLOAD "unmirror" '("unmirror"))
 
-(AUTOLOAD "verifyplotlayer.fas" '("verifyplotlayer"))
+(AUTOLOAD "verifyplotlayer" '("verifyplotlayer"))
 
-(AUTOLOAD "vbtest.fas" '("vbtest"))
+(AUTOLOAD "vbtest" '("vbtest"))
 
-(AUTOLOAD "zeroz.fas" '("zeroz"))
+(AUTOLOAD "zeroz" '("zeroz"))
 
-(AUTOLOAD "zooms.fas" '("za" "ze" "zl" "zx" "zz" "-" "*"))
+(AUTOLOAD "zooms" '("za" "ze" "zl" "zx" "zz" "-" "*"))
+
+; These are not callable from the command line, so they cannot autoload.  Autoload only works when
+(LOAD "createdimstyles" '("createdimstyles"))
+
+(LOAD "le_utils" '("cnt_tile_items" "getnewline" "remsptabs" "le_rtos"))
