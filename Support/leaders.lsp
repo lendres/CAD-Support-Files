@@ -1,4 +1,4 @@
-;;; Copyright 1997-2000 by Lance A. Endres
+;;; Copyright Lance A. Endres
 
 ;;; March 8, 2004
 ;;; Added the used of EXPERT and eliminated having to decide how to call the

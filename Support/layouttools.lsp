@@ -14,7 +14,6 @@
   LAYOUT
 ) ;_ End defun
 
-
 ;;; Written by Lance A. Endres
 ;;; Create a new layout and set it current.
 (defun MAKE-NEW-LAYOUT (/ ADOC LAYOUT) 
@@ -24,7 +23,6 @@
   ) ;_ End setq
   (vla-put-activelayout ADOC LAYOUT)
 ) ;_ End defun
-
 
 ;;; Written by Tony Tanzillo
 ;;; http://ourworld.compuserve.com/homepages/tonyt
@@ -54,7 +52,6 @@
   NAME
 ) ;_ End defun
 
-
 ;;; Written by Frank Oquendo
 ;;; http://www2.stonemedia.com/franko
 ;;; Activates the last created layout.
@@ -83,7 +80,6 @@
   (reverse LST)
 ) ;_ End defun
 
-
 ;;; Written by Tony Tanzillo
 ;;; http://ourworld.compuserve.com/homepages/tonyt
 ;;; Activates the last created layout.
@@ -104,7 +100,6 @@
   (cdr (assoc (apply 'max (mapcar 'car TABS)) TABS))
 ) ;_ End defun
 
-
 ;;; Written by Frank Oquendo
 ;;; http://www2.stonemedia.com/franko
 ;;; Toggles the display state of the layout tabs
@@ -122,7 +117,6 @@
   (princ)
 ) ;_ End defun
 
-
 ;;; Modified by Lance A. Endres from code by Frank Oquendo.
 ;;; Returns the value of the display state of the layout tabs
 (defun GET-LAYOUTS-DISP-STATE () 
@@ -134,7 +128,6 @@
     ) ;_ End vla-get-Display
   ) ;_ End vla-get-DisplayLayoutTabs
 ) ;_ End defun
-
 
 ;;; Modified by Lance A. Endres from code by Frank Oquendo.
 ;;; Sets the value of the display state of the layout tabs based on which
@@ -149,7 +142,6 @@
   ) ;_ End vla-put-displaylayouttabs
 ) ;_ End defun
 
-
 ;;; Written by Lance A. Endres.
 ;;; Retrieves the current active layout.
 (defun GET-CURRENT-LAYOUT () 
@@ -157,7 +149,6 @@
     (vla-get-activedocument (vlax-get-acad-object))
   ) ;_ End vla-get-activelayout
 ) ;_ End defun
-
 
 ;;; Written by Lance A. Endres.
 ;;; Sets a layout active.

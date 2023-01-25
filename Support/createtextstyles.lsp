@@ -25,7 +25,6 @@
 
   ;;; Establish constants for the text sizes.  These constants are the
   ;;; only location modifications are needed to change the height of fonts.
-
   (setq SIZE3-32 (/ 3.0 32.0)
         SIZE3-16 (/ 3.0 16.0)
         SIZE10PT 0.0937500
@@ -42,7 +41,6 @@
 
   ;;; If the output (plotting) units are System Internation, then convert
   ;;; the font sizes to millimeters.
-
   (if (= (getcfg "AppData/Setup_Data/Plot_Unts") "si") 
     (setq SIZE3-32 (* SIZE3-32 25.4)
           SIZE3-16 (* SIZE3-16 25.4)
