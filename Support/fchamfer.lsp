@@ -1,5 +1,4 @@
-;;; fchamfer.lsp
-;;; Copyright 1997-2000 by Lance A. Endres
+;;; Copyright Lance A. Endres
 
 (defun C:FCHAMFER (/ ENT1 ENT2) 
   (setvar "cmdecho" 0)
