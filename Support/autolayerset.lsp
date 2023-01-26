@@ -1,6 +1,6 @@
 ;;; Copyright 2000 by Lance A. Endres
 
-(defun AUTO_LAYERSET (/ LD_LAY LYTEST TXT_LAY VL-ADOC VL-LAYER) 
+(defun AUTOLAYERSET (/ LD_LAY LYTEST TXT_LAY VL-ADOC VL-LAYER) 
   (vl-load-com)
   (setq LD_LAY  (getcfg "AppData/Leader_Utils/Ld_Lay")
         TXT_LAY (getcfg "AppData/Leader_Utils/Txt_Lay")

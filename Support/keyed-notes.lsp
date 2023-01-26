@@ -2,7 +2,7 @@
 
 (load "leader_base")
 (load "le_utils")
-(load "auto_layerset")
+(load "autolayerset")
 
 (defun C:KEYED-NOTES (/ ATTD ATTNO CMD CLAY CMD CNT DIMS FILE FILE_HAND INSPT LMBD1 
                       LMBD2 OSM PT1 PT2 TEMP1 TEMP2 VL-ADOC VL-COLLECT VL-ENT1
@@ -37,7 +37,7 @@
   ) ;_ End mapcar
 
   ;;; If leaders are always to be placed on text layer, create layer if necessary and set text layer current.
-  (AUTO_LAYERSET)
+  (AUTOLAYERSET)
 
   ;;; Get data about block from the keyed-notes.dat file.
   (setq TEMP1 (GETNEWLINE FILE_HAND))

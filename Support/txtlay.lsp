@@ -1,6 +1,7 @@
 ;;; Copyright Lance A. Endres
 
 (vl-load-com)
+(load "autolayerset")
 
 (defun c:DTEXT_LAYER (/ CMD) 
   (TEXT_LAYER_MAIN "DTEXT")
@@ -19,9 +20,9 @@
         CMD     (getvar "cmdecho")
         CLAY    (getvar "clayer")
   ) ;_ End setq
-  (setvar "cmdecho" 0)
+  (setvar "cmdecho" 1)
   ;;;(setvar "cmdecho" 1)	;;; For debugging.
-  (AUTO_LAYERSET)
+  (AUTOLAYERSET)
   (cond 
     ((= TYPE "DTEXT")
      (command "._dtext")

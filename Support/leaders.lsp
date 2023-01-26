@@ -5,7 +5,7 @@
 ;;; adding of dimstyles depending on if they were already loaded.
 
 (vl-load-com)
-(load "auto_layerset")
+(load "autolayerset")
 (load "leader_base")
 (load "createdimstyles")
 
@@ -42,7 +42,7 @@
 
   ;;; If leaders are always to be placed on text layer, create layer if
   ;;; necessary and set text layer current.
-  (AUTO_LAYERSET)
+  (AUTOLAYERSET)
 
   ;;; Make the leader.
   (LEADER_BASE LEAD_TYPE PT1 PT2)
