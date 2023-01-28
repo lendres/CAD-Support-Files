@@ -7,7 +7,7 @@
                   LMBD2 SSVL VL-ADOC YSTARTPNT
                  ) 
   (setq VL-ADOC (vla-get-activedocument (vlax-get-acad-object)))
-  (vla-startundomark VL-ADOC) ;_ End vla-startundomark
+  (vla-startundomark VL-ADOC)
   (setq CMD (vla-getvariable VL-ADOC "cmdecho"))
   (mapcar 
     '(lambda (LMBD1 LMBD2) (vla-setvariable VL-ADOC LMBD1 LMBD2))

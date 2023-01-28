@@ -1,6 +1,6 @@
 ;;; Copyright Lance A. Endres
 
-(defun c:TEXTBLOCKS (/ ANG BLCK DIMS DIST ENT1 ENT1DEF INSPT ORTH PT1 PT2 PT3 TXT) 
+(defun C:TEXTBLOCKS (/ ANG BLCK DIMS DIST ENT1 ENT1DEF INSPT ORTH PT1 PT2 PT3 TXT) 
   (setq OLDERR  *ERROR*
         *ERROR* TEXTBLOCKSERR
         DIMS    (getvar "dimscale")
