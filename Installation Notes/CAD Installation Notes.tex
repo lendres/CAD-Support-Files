@@ -26,6 +26,7 @@
 \newcommand*{\userdir}{\textcode{\textit{user}}}
 \newcommand*{\plotstyledir}{\textcode{\textit{plotstyles}}}
 \newcommand*{\templatedir}{\textcode{\textit{templates}}}
+\newcommand*{\blocksdir}{\textcode{\textit{Blocks}}}
 
 \newcommand*{\rootpath}{\rootdir\tbs}
 %\newcommand*{}{}
@@ -41,13 +42,14 @@
 \section{Directories}
 \begin{center}
 	\begin{tabular}{|l|l|}
-	  \hline
-	  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-	  \rootdir & \textcode{C:\tbs{}Custom Program Files\tbs{}CAD Support Files\tbs{}} \\ \hline
-	  \supportdir & \rootpath\textcode{Support} \\ \hline
-	  \userdir & \rootpath\textcode{User Files} \\ \hline
-	  \plotstyledir & \rootpath\textcode{Plot Styles} \\ \hline
-	  \templatedir & \rootpath\textcode{Templates} \\ \hline
+		\hline
+		% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+		\rootdir & \textcode{C:\tbs{}Custom Program Files\tbs{}CAD Support Files\tbs{}} \\ \hline
+		\supportdir & \rootpath\textcode{Support} \\ \hline
+		\userdir & \rootpath\textcode{User Files} \\ \hline
+		\plotstyledir & \rootpath\textcode{Plot Styles} \\ \hline
+		\templatedir & \rootpath\textcode{Templates} \\ \hline
+		\templatedir & \rootpath\textcode{Blocks} \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -66,6 +68,7 @@
     	\item Expand \textcode{File$\rightarrow$Support File Search Path}.
     	\item Add the \supportdir{} directory.
     	\item Move the entry to the top so that anything in that directory is found first.  See \figurename~\ref{fig:addsupportdirectory}.
+    	\item Add an entry for each subdirectory in \blocksdir{}.
     \end{numberedlist}
     \item Add the plot style search path.
     \begin{numberedlist}
@@ -77,9 +80,6 @@
     	% C:\Users\Lance\AppData\Local\Gstarsoft\GstarCAD\R23\en-US\template\
     	\item Expand \textcode{Template Settings}$\rightarrow$\textcode{Drawing Template File Location}
     	\item Add the \templatedir{} directory.
-    \end{numberedlist}
-    \begin{numberedlist}
-    	\item
     \end{numberedlist}
 \end{numberedlist}
 
