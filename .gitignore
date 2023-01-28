@@ -1,5 +1,6 @@
 # LaTeX temporary and output files
 *.bak
+*.bak.cuix
 *.log
 *.dvi
 *.pdf
