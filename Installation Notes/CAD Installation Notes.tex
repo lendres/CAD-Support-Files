@@ -117,6 +117,20 @@
 \end{bulletedlist}
 
 
+\section{Menus}
+\subsection{Load a Partial Menu}
+The \textcode{CTRL-D} ortho-toggle is located in the \textcode{lae.mnu} file.
+\begin{bulletedlist}
+	\item \textcode{MENULOAD}$\rightarrow$lae.mnu (or lae.cuix). 
+\end{bulletedlist}
+
+\subsection{Set Osnap Menu}
+\begin{numberedlist}
+	\item Open the \textit{Customize User Interface} (use the command \textcode{CUI}.
+	\item Go to \textcode{GCAD/ACAD}$\rightarrow$\textcode{Mouse Buttons}$\rightarrow$\textcode{Shift+Click}$\rightarrow$\textit{Button 2: Snap Button}.
+	\item Change \textcode{Macro} from \textcode{\$P0=SNAP \$p0=*} to \textcode{\$P0=lae.SNAP \$p0=*}.
+\end{numberedlist}
+
 \chapter{Notes}
 \section{Using Customizations}
 The setup function requires a named plot style drawing to be open.
