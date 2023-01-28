@@ -1,4 +1,4 @@
-;;; Copyright 2000 by Lance A. Endres
+;;; Copyright Lance A. Endres
 
 (defun AUTOLAYERSET (/ LD_LAY LYTEST TXT_LAY VL-ADOC VL-LAYER) 
   (vl-load-com)

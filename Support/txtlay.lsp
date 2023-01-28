@@ -1,19 +1,22 @@
 ;;; Copyright Lance A. Endres
+;;; Text commands that automatically put the text on a specified layer.
 
 (vl-load-com)
 (load "autolayerset")
 
-(defun c:DTEXT_LAYER (/ CMD) 
-  (TEXT_LAYER_MAIN "DTEXT")
+(defun C:DTEXT_LAYER (/ CMD) 
+  (TEXT_LAYER_MAIN "._dtext")
   (princ)
 ) ;_ End defun
 
-(defun c:MTEXT_LAYER (/ CMD LYTEST) 
-  (TEXT_LAYER_MAIN "MTEXT")
+(defun C:MTEXT_LAYER (/ CMD LYTEST)
+	; Force the dialog box for MTEXT to be shown.  Command line only is typically used for lisp.
+  (initdia 1)
+  (TEXT_LAYER_MAIN "._mtext")
   (princ)
 ) ;_ End defun
 
-(defun TEXT_LAYER_MAIN (TYPE / CMD CLAY OLDERR) 
+(defun TEXT_LAYER_MAIN (TEXTCOMMAND / CMD CLAY OLDERR) 
   (vla-startundomark (vla-get-activedocument (vlax-get-acad-object)))
   (setq OLDERR  *ERROR*
         *ERROR* TEXTLAYERERR
@@ -21,23 +24,21 @@
         CLAY    (getvar "clayer")
   ) ;_ End setq
   (setvar "cmdecho" 1)
-  ;;;(setvar "cmdecho" 1)	;;; For debugging.
+
+  ; Activate the layer used for autolayer commands.
   (AUTOLAYERSET)
-  (cond 
-    ((= TYPE "DTEXT")
-     (command "._dtext")
-    ) ;_End dtext
-    ((= TYPE "MTEXT")
-     (initdia 1)
-     (command "._mtext")
-    ) ;_End mtext
-  ) ;_ End cond
+  
+  ; Start the text command using the argument passed.
+  (command TEXTCOMMAND)
+  
+  ; Wait while the command is still active (wait for user input).
   (while (= (logand (getvar "cmdactive") 1) 1) 
     (command pause)
   ) ;_ End while
+
+	; Restore settings.
   (setvar "clayer" CLAY)
   (setvar "cmdecho" CMD)
-  ;;;(setvar "cmdecho" 0)    ;;; For debugging.
   (setq *ERROR* OLDERR)
   (vla-endundomark (vla-get-activedocument (vlax-get-acad-object)))
 ) ;_ End defun
