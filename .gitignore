@@ -27,8 +27,8 @@
 *.synctex
 *.synctex(busy)
 
-Figures/*.jpg
-Figures/*.eps
+*/Figures/*.jpg
+*/Figures/*.eps
 
 # Folders
 Archive/
