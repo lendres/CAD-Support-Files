@@ -27,6 +27,12 @@
 *.synctex
 *.synctex(busy)
 
+Figures/*.jpg
+Figures/*.eps
+
+# Folders
+Archive/
+
 # Backup files
 *~
 *.bak
