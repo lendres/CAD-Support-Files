@@ -25,6 +25,7 @@
 (AUTOLOAD "arced" '("arced"))
 (AUTOLOAD "arcleader" '("al"))
 (AUTOLOAD "asctext" '("asctext"))
+(AUTOLOAD "autolayercommands" '("dtextlayer" "mtextlayer" "dimhorizontallayer" "dimverticallayer"))
 (AUTOLOAD "autoortho" '("mirror_ortho_off" "mirror_ortho_on" "rotate_ortho_off" "rotate_ortho_on"))
 
 (AUTOLOAD "bgtoggle" '("bgtoggle"))
@@ -77,7 +78,6 @@
 
 (AUTOLOAD "toggletb" '("all-tb-toggle"))
 (AUTOLOAD "totallength" '("totallength"))
-(AUTOLOAD "txtlay" '("dtext_layer" "mtext_layer"))
 (AUTOLOAD "textblocks" '("textblocks"))
 (AUTOLOAD "tomtext" '("tomtext"))
 (AUTOLOAD "trimp" '("trimp"))

@@ -4,19 +4,29 @@
 (vl-load-com)
 (load "autolayerset")
 
-(defun C:DTEXT_LAYER (/ CMD) 
-  (TEXT_LAYER_MAIN "._dtext")
+(defun C:DTEXTLAYER ()
+  (AUTOLAYERFORCOMMAND "._dtext")
   (princ)
 ) ;_ End defun
 
-(defun C:MTEXT_LAYER (/ CMD LYTEST)
+(defun C:MTEXTLAYER ()
 	; Force the dialog box for MTEXT to be shown.  Command line only is typically used for lisp.
   (initdia 1)
-  (TEXT_LAYER_MAIN "._mtext")
+  (AUTOLAYERFORCOMMAND "._mtext")
   (princ)
 ) ;_ End defun
 
-(defun TEXT_LAYER_MAIN (TEXTCOMMAND / CMD CLAY OLDERR) 
+(defun C:DIMHORIZONTALLAYER ()
+  (AUTOLAYERFORCOMMAND "._dimhorizontal")
+  (princ)
+) ;_ End defun
+
+(defun C:DIMVERTICALLAYER ()
+  (AUTOLAYERFORCOMMAND "._dimvertical")
+  (princ)
+) ;_ End defun
+
+(defun AUTOLAYERFORCOMMAND (TEXTCOMMAND / CMD CLAY OLDERR) 
   (vla-startundomark (vla-get-activedocument (vlax-get-acad-object)))
   (setq OLDERR  *ERROR*
         *ERROR* TEXTLAYERERR
