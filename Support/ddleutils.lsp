@@ -18,22 +18,22 @@
   ) ;_ End setq
 
   ;;; If data does not exist set defaults.
-  (if (or (null ANG_MODE) (= ANG_MODE "")) 
-    (setq ANG_MODE (getvar "aunits"))
-    (setq ANG_MODE (atoi ANG_MODE))
-  ) ;_ End if
   (if (or (null AUTO_PS) (= AUTO_PS "")) 
     (setq AUTO_PS "0")
   ) ;_ End if
   (if (or (null TXT_LAY) (= TXT_LAY "")) 
     (setq TXT_LAY "1")
   ) ;_ End if
+  (if (or (null ANG_MODE) (= ANG_MODE "")) 
+    (setq ANG_MODE (getvar "aunits"))
+    (setq ANG_MODE (atoi ANG_MODE))
+  ) ;_ End if
   (if (null ROT_ANG) 
     (setq ROT_ANG 0)
     (setq ROT_ANG (angtof ROT_ANG ANG_MODE))
   ) ;_ End if
   (if (or (null LD_LAY) (= LD_LAY "")) 
-    (setq LD_LAY "TEXT")
+    (setq LD_LAY "Text")
   ) ;_ End if
 
   ;;; Run dialog.
@@ -98,7 +98,7 @@
 (defun LD_LAY_CHECK (TEMP) 
   (if (snvalid TEMP) 
     (progn 
-      (set_tile "ld_lay" (strcase TEMP))
+      (set_tile "ld_lay" TEMP)
       (if (= (get_tile "error") "Not a valid layer name.") 
         (set_tile "error" "")
       ) ;_ End if test for resetting error tile
@@ -133,7 +133,7 @@
             TXT_LAY  (get_tile "txt_lay")
             ANG_MODE (getvar "aunits")
             ROT_ANG  (angtof (get_tile "rot_ang") ANG_MODE)
-            LD_LAY   (strcase (get_tile "ld_lay"))
+            LD_LAY   (get_tile "ld_lay")
       ) ;_ End setq
       (done_dialog)
       (setcfg "AppData/Leader_Utils/Auto_PS" AUTO_PS)
@@ -222,7 +222,7 @@
 
     (if (/= (logand 16 (cdr (assoc 70 TEMPLIST))) 16) 
       (progn 
-        (setq NAME (strcase (cdr (assoc 2 TEMPLIST))))
+        (setq NAME (cdr (assoc 2 TEMPLIST)))
         (setq SORTLIST (cons NAME SORTLIST))
       ) ;_ End progn
     ) ;_ End if
@@ -293,7 +293,6 @@
 ) ;_ End defun
 
 (defun LAYEDIT_ACT (LAYVALUE) 
-  (setq LAYVALUE (xstrcase LAYVALUE))
   (if (setq LAY-IDX (GETINDEX LAYVALUE LAYNMLST)) 
     (progn 
       (set_tile "error" "")
