@@ -238,8 +238,8 @@
   (unload_dialog DCL_ID)
 
   ;;; Test for running setup.
-  (if (= RUN_SETUP "Yes")
-      (SETUP)
+  (if (= RUN_SETUP "Yes") 
+    (SETUP)
   ) ;_ End if
 
   ;;; Exit.
@@ -264,7 +264,7 @@
     (mapcar '(lambda (TEMP) (mode_tile TEMP 0)) TOG_LIST)
     (mapcar '(lambda (TEMP) (mode_tile TEMP 1)) TOG_LIST)
   ) ;_ End if
-  
+
   ;;; Silent exit.
   (princ)
 ) ;_ End defun
