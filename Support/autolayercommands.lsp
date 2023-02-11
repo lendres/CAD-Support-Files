@@ -16,6 +16,11 @@
   (princ)
 ) ;_ End defun
 
+(defun C:DIMALIGNEDLAYER ()
+  (AUTOLAYERFORCOMMAND "._dimaligned")
+  (princ)
+) ;_ End defun
+
 (defun C:DIMHORIZONTALLAYER ()
   (AUTOLAYERFORCOMMAND "._dimhorizontal")
   (princ)

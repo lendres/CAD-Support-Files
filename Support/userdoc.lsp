@@ -25,7 +25,7 @@
 (AUTOLOAD "arced" '("arced"))
 (AUTOLOAD "arcleader" '("al"))
 (AUTOLOAD "asctext" '("asctext"))
-(AUTOLOAD "autolayercommands" '("dtextlayer" "mtextlayer" "dimhorizontallayer" "dimverticallayer"))
+(AUTOLOAD "autolayercommands" '("dtextlayer" "mtextlayer" "dimalignedlayer" "dimhorizontallayer" "dimverticallayer"))
 (AUTOLOAD "autoortho" '("mirror_ortho_off" "mirror_ortho_on" "rotate_ortho_off" "rotate_ortho_on"))
 
 (AUTOLOAD "bgtoggle" '("bgtoggle"))
