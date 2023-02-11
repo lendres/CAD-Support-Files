@@ -1,6 +1,6 @@
 ;;; Copyright Lance A. Endres
 
-(defun c:OSTOGGLE (/ OSM ORTH) 
+(defun C:OSTOGGLE (/ OSM ORTH) 
   (setq OLDERR  *ERROR*
         *ERROR* OSTOGGLEERR
         ORTH    (getvar "orthomode")
