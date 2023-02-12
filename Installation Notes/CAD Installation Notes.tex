@@ -44,19 +44,22 @@
 	\begin{tabular}{|l|l|}
 		\hline
 		% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-		\rootdir & \textcode{C:\tbs{}Custom Program Files\tbs{}CAD Support Files\tbs{}} \\ \hline
-		\supportdir & \rootpath\textcode{Support} \\ \hline
-		\userdir & \rootpath\textcode{User Files} \\ \hline
-		\plotstyledir & \rootpath\textcode{Plot Styles} \\ \hline
-		\templatedir & \rootpath\textcode{Templates} \\ \hline
-		\templatedir & \rootpath\textcode{Blocks} \\ \hline
+		\rootdir		& \textcode{C:\tbs{}Custom Program Files\tbs{}CAD Support Files\tbs{}}	\\ \hline
+		\supportdir		& \rootpath\textcode{Support}											\\ \hline
+		\userdir		& \rootpath\textcode{User Files}										\\ \hline
+		\plotstyledir	& \rootpath\textcode{Plot Styles}										\\ \hline
+		\templatedir	& \rootpath\textcode{Templates}											\\ \hline
+		\templatedir	& \rootpath\textcode{Blocks}											\\ \hline
 	\end{tabular}
 \end{center}
 
 \section{Command Aliases (PGP)}
 \begin{numberedlist}
     \item Open the software's PGP file.
-    \item Copy of contents of the \userdir\tbs\textcode{user.pgp} to the bottom of the software's PGP file.
+    \item Copy of contents of the \userdir\tbs\textcode{user.pgp} to the bottom of the software's PGP file.  Example file location:
+    \begin{plainlist}
+    	\item \textcode{C:\tbs{}Users\tbs{}$<$user$>$\tbs{}AppData\tbs{}Roaming\tbs{}ZWSOFT\tbs{}ZWCAD\tbs{}2023\tbs{}en-US\tbs{}Support\tbs{}}
+    \end{plainlist}
     \item Close the file and reload it.  The aliases at the bottom will override those at the top.
 \end{numberedlist}
 
@@ -96,7 +99,8 @@
     \item Find the software's \textcode{\textit{document}.lsp}.  Examples include:
     \begin{bulletedlist}
     	\item \textcode{acaddoc.lsp}
-    	\item \textcode{gcad2023doc.lsp}.
+    	\item \textcode{F:\tbs{}Program Files\tbs{}Gstarsoft\tbs{}GstarCAD2023\tbs{}Support\tbs{}gcad2023doc.lsp}
+    	\item \textcode{F:\tbs{}Program Files\tbs{}ZWSOFT\tbs{}ZWCAD 2023\tbs{}Support\tbs{}en-US\tbs{}ZWCAD2023doc.lsp}
     \end{bulletedlist}
     \item Copy it to the \supportdir{} directory.
     \item Edit the file to add the following the end (just before the file \textcode{(princ)} function):
@@ -108,13 +112,23 @@
 \end{numberedlist}
 
 
-%\begin{plainlist}
-%	\item \textcode{BUTTON="Make\_Document"}
-%\end{plainlist}
 \section{Settings}
 \begin{bulletedlist}
 	\item Turn off \textit{Dynamic Input} (F12) or button at bottom.
+	\item Set the crosshair size: \textcode{CURSORSIZE}
+	\item Set the right-click customization.
+	\begin{numberedlist}
+		\item \textcode{OPTIONS}$\rightarrow$\textcode{User Preferences}$\rightarrow$\textcode{Right-click customizations...}
+		\item See \figurename~\ref{fig:rightclickcustomization} for the settings.
+	\end{numberedlist}
 \end{bulletedlist}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=3.25in]{rightclickcustomization}
+	\caption{Right-click customization.}
+	\label{fig:rightclickcustomization}
+\end{figure}
 
 
 \section{Menus}
@@ -126,7 +140,7 @@ The \textcode{CTRL-D} ortho-toggle is located in the \textcode{lae.mnu} file.
 
 \subsection{Set Osnap Menu}
 \begin{numberedlist}
-	\item Open the \textit{Customize User Interface} (use the command \textcode{CUI}.
+	\item Open the \textit{Customize User Interface} (use the command \textcode{CUI}).
 	\item Go to \textcode{GCAD/ACAD}$\rightarrow$\textcode{Mouse Buttons}$\rightarrow$\textcode{Shift+Click}$\rightarrow$\textit{Button 2: Snap Button}.
 	\item Change \textcode{Macro} from \textcode{\$P0=SNAP \$p0=*} to \textcode{\$P0=lae.SNAP \$p0=*}.
 \end{numberedlist}
@@ -142,7 +156,6 @@ The setup function requires a named plot style drawing to be open.
 \begin{bulletedlist}
 	\item \href{https://www.youtube.com/watch?v=Rrgx3TcXNzM}{Video on lisp debugging with GStar2023}
 \end{bulletedlist}
-
 
 
 \end{document} 
