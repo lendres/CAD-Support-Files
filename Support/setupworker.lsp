@@ -5,8 +5,8 @@
 ;;; Now it's time to get some actual work done.  Above this point are the subroutines
 ;;; to run the dialog box.  Below are the routines to modify the drawing.
 (defun SETUP (/ ADJ_FOR_PAPERS CNT1 DWG_SCALE FILE1 IMP_LYTS LMBD1 L_UNITS L_UPREC 
-              LMBD2 PLW PT1 PT2 SET_LAYS SET_LMTS VL-ADOC 
-              VL-LAY-DISP-MARGINS VL-LAY-DISP-PAPER VL-PREF-DISPLAY
+              LMBD2 PLW PT1 PT2 SET_LAYS SET_LMTS VL-ADOC VL-LAY-DISP-MARGINS 
+              VL-LAY-DISP-PAPER VL-PREF-DISPLAY
              ) 
   (setq ADJ_FOR_PAPERS  (atoi (getcfg (strcat DATAPREFIX "Adj_For_Papers")))
         DWG_SCALE       (getcfg (strcat DATAPREFIX "Dwg_Scale"))
@@ -16,7 +16,6 @@
         SET_LMTS        (getcfg (strcat DATAPREFIX "Set_Lmts"))
         SET_LAYS        (getcfg (strcat DATAPREFIX "Set_Lays"))
         IMP_LYTS        (getcfg (strcat DATAPREFIX "Imp_Lyts"))
-        FILE1           (findfile (getcfg (strcat DATAPREFIX "Lay_Data")))
         PLW             (/ DWG_SCALE 32)
         VL-ADOC         (vla-get-activedocument (vlax-get-acad-object))
         PAPER_ADJ_SCALE 1.25
@@ -124,10 +123,10 @@
     (list 
       0
       0
-      2 ;;; Coords.
-      DWG_SCALE ;;; Dim scale.
-      L_UNITS ;;; Units.
-      L_UPREC ;;; Precision.
+      2 ; Coords.
+      DWG_SCALE ; Dim scale.
+      L_UNITS ; Units.
+      L_UPREC ; Precision.
       0
       0
       0
@@ -158,25 +157,34 @@
   ;;; Text style settings.
   (C:CREATETEXTSTYLES)
 
-	;;; Load line types.
-	(C:LOADLINETYPES)
+  ;;; Load line types.
+  (C:LOADLINETYPES)
 
   ;;; Layers.
   ;;; NOTE:  Need to varify that the heading exists within the layer standard file.
   (if (= SET_LAYS "1") 
-    (progn 
-      (setq CNT1 1)
-      (while (< CNT1 7) 
-        (if 
-          (= 
-            (getcfg (strcat "AppData/Setup_Data/Genre0" (itoa CNT1))) ;_ End getcfg
+    (progn
+      (setq CNT1            1
+            FILEPATH        (getcfg (strcat DATAPREFIX "Lay_Data"))
+      ) ;_ End setq
+
+			; Default layers file if one was not found in the settings.
+      (if (= FILEPATH NIL)
+        (setq FILEPATH "Standard Layers.lst")
+			) ;_ End setq
+      (setq FILE1 (findfile FILEPATH))
+
+      (while (< CNT1 7)
+        (if
+          (=
+            (getcfg (strcat "AppData/Setup_Data/Genre0" (itoa CNT1)))
             "1"
           ) ;_ End =
           (MAKELAYERS (strcat "**GENRE0" (itoa CNT1)) FILE1)
         ) ;_ End if
         (setq CNT1 (1+ CNT1))
       ) ;_ End while.
-    )
+    ) ;_ End progn.
   )
 
   (if (= ADJ_FOR_PAPERS 1) 
@@ -191,8 +199,8 @@
   ) ;_ End if.
 ) ;_ End defun.
 
-(defun MAKELAYERS (HEADING FILE1 ADJ_FOR_PAPERS / ACTLAYOUT FILE_HAND FRZTEST LAYERNAME 
-                   LAYERCOLOR LAYERLINETYPE LAYERPLOTORNOT LAYERPLOTSTYLE
+(defun MAKELAYERS (HEADING FILE1 ADJ_FOR_PAPERS / ACTLAYOUT FILE_HAND FRZTEST 
+                   LAYERNAME LAYERCOLOR LAYERLINETYPE LAYERPLOTORNOT LAYERPLOTSTYLE
                   ) 
   (if (= (getvar "pstylemode") 0) 
     (progn 
@@ -225,18 +233,18 @@
     ) ;_ End progn.
   ) ;_ End if.
   (setq FILE_HAND (open FILE1 "r")
-        LAYERNAME     (GETNEWLINE FILE_HAND)
+        LAYERNAME (GETNEWLINE FILE_HAND)
   ) ;_ End setq.
-  
+
   ;;; Read until we find the heading.
   (while (/= (substr LAYERNAME 1 (strlen HEADING)) HEADING) 
     (setq LAYERNAME (GETNEWLINE FILE_HAND))
   ) ;_ End while.
-  
+
   ;;; Read the lines that make up a layer data set.
-  (setq LAYERNAME (GETNEWLINE FILE_HAND)
-        LAYERCOLOR (GETNEWLINE FILE_HAND)
-        LAYERLINETYPE (GETNEWLINE FILE_HAND)
+  (setq LAYERNAME      (GETNEWLINE FILE_HAND)
+        LAYERCOLOR     (GETNEWLINE FILE_HAND)
+        LAYERLINETYPE  (GETNEWLINE FILE_HAND)
         LAYERPLOTORNOT (GETNEWLINE FILE_HAND)
         LAYERPLOTSTYLE (GETNEWLINE FILE_HAND)
   ) ;_ End setq.
@@ -249,10 +257,12 @@
         (/= (substr LAYERPLOTORNOT 1 2) "**")
         (/= (substr LAYERPLOTSTYLE 1 2) "**")
       ) ;_ End and.
-      (LAYER_DATA_CHECK LAYERNAME LAYERCOLOR LAYERLINETYPE LAYERPLOTORNOT LAYERPLOTSTYLE)
-      (setq LAYERNAME (GETNEWLINE FILE_HAND)
-            LAYERCOLOR (GETNEWLINE FILE_HAND)
-            LAYERLINETYPE (GETNEWLINE FILE_HAND)
+      (LAYER_DATA_CHECK LAYERNAME LAYERCOLOR LAYERLINETYPE LAYERPLOTORNOT 
+                        LAYERPLOTSTYLE
+      )
+      (setq LAYERNAME      (GETNEWLINE FILE_HAND)
+            LAYERCOLOR     (GETNEWLINE FILE_HAND)
+            LAYERLINETYPE  (GETNEWLINE FILE_HAND)
             LAYERPLOTORNOT (GETNEWLINE FILE_HAND)
             LAYERPLOTSTYLE (GETNEWLINE FILE_HAND)
       ) ;_ End setq.
@@ -271,12 +281,14 @@
   (close FILE_HAND)
 ) ;_ End defun.
 
-(defun LAYER_DATA_CHECK (LAYERNAME LAYERCOLOR LAYERLINETYPE LAYERPLOTORNOT LAYERPLOTSTYLE / PSMODE TEST TEST2) 
+(defun LAYER_DATA_CHECK (LAYERNAME LAYERCOLOR LAYERLINETYPE LAYERPLOTORNOT 
+                         LAYERPLOTSTYLE / PSMODE TEST TEST2
+                        ) 
   (setq PSMODE (getvar "pstylemode"))
   (if LAYERCOLOR 
     (if (numberp (read LAYERCOLOR)) 
       (setq LAYERCOLOR (read LAYERCOLOR)
-            TEST  1
+            TEST       1
       ) ;_ End setq.
       (setq TEST 2)
     ) ;_ End if.
@@ -317,7 +329,9 @@
      (princ "\nInvalid layer name found in layer setup file.")
      (princ "\nCheck file and re-run setup.")
     ) ;_ End cond for layer check.
-    ((and (/= (strcase LAYERPLOTORNOT) "PLOT") (/= (strcase LAYERPLOTORNOT) "NO"))
+    ((and (/= (strcase LAYERPLOTORNOT) "PLOT") 
+          (/= (strcase LAYERPLOTORNOT) "NO")
+     )
      (princ 
        "\Invalid plot/no plot referance found in layer setup file."
      ) ;_ End princ.
@@ -341,7 +355,9 @@
        ) ;_ End or.
        (command "_.layer" "thaw" LAYERNAME "")
      ) ;_ End if.
-     (command "_.-layer" "m" LAYERNAME "c" LAYERCOLOR LAYERNAME "l" LAYERLINETYPE LAYERNAME "p" LAYERPLOTORNOT LAYERNAME)
+     (command "_.-layer" "m" LAYERNAME "c" LAYERCOLOR LAYERNAME "l" LAYERLINETYPE 
+              LAYERNAME "p" LAYERPLOTORNOT LAYERNAME
+     )
      (if (= PSMODE 0) 
        (command "ps" LAYERPLOTSTYLE LAYERNAME "")
        (command "")
@@ -475,7 +491,6 @@
 
   ;;; Restore the value of the drop down box.
   (set_tile "dimprec" INDEX)
-
 ) ;_ End defun.
 
 (defun DECIM_ACTIVATED (/ INDEX) 
