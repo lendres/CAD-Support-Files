@@ -22,12 +22,14 @@
 ) ;_ End defun
 
 (defun C:DIMHORIZONTALLAYER ()
-  (AUTOLAYERFORCOMMAND "._dimhorizontal")
+  ; Old command was dimhorizontal.
+  (AUTOLAYERFORCOMMAND "._dimlinear")
   (princ)
 ) ;_ End defun
 
 (defun C:DIMVERTICALLAYER ()
-  (AUTOLAYERFORCOMMAND "._dimvertical")
+  ; Old command was dimvertical
+  (AUTOLAYERFORCOMMAND "._dimlinear")
   (princ)
 ) ;_ End defun
 
