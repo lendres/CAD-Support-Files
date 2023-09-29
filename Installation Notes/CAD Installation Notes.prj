@@ -4,16 +4,31 @@
 1
 1
 CAD Installation Notes.tex
-7
-4
-1
+12
+9
+2
 
 CAD Installation Notes.tex
 TeX
-152055739 0 -1 6874 -1 5651 0 0 1319 583 0 1 177 32 -1 0 0 255 0 -1 -1 0 1 0 5651 -1  0 -1 0
+152055739 0 -1 368 -1 388 0 0 1319 583 0 1 142 224 -1 0 0 255 0 -1 -1 0 1 0 388 -1  0 -1 0
+Installation of Customizations.tex
+TeX
+1060859 0 -1 0 -1 0 182 182 1228 616 1 1 86 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+Notes.tex
+TeX
+269496315 0 -1 867 -1 872 52 52 1098 486 1 1 632 208 -1 -1 0 0 0 -1 -1 0 1 0 872 -1  0 -1 0
+Implementation Installations.tex
+TeX
+1060859 1 -1 37 -1 9 78 78 1124 512 1 1 149 0 -1 -1 0 0 38 -1 -1 38 1 0 9 -1  0 -1 0
+Setup.tex
+TeX
+1060859 0 -1 496 -1 190 208 208 1254 642 1 1 219 112 -1 -1 0 0 20 -1 -1 20 1 0 190 -1  0 0 0
+Title Page.tex
+TeX
+1060859 0 -1 290 -1 172 0 0 1046 434 1 1 205 64 -1 -1 0 0 20 -1 -1 20 1 0 172 -1  0 -1 0
 :\Custom Program Files\LaTeX\bibtex\bib\le.bib
 BibTeX
-269485042 0 2132 2 2133 26 78 78 1124 512 1 1 331 256 -1 -1 0 0 60 0 0 60 1 0 26 2133  0 -1 0
+1049586 0 2132 2 2133 26 78 78 1124 512 1 1 345 256 -1 -1 0 0 60 0 0 60 1 0 26 2133  0 -1 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lecode.sty
 TeX:STY
 1060850 1 14 13 14 26 0 0 1066 431 1 0 246 224 -1 -1 0 0 25 0 0 25 1 0 26 14  0 0 0
@@ -31,3 +46,10 @@ TeX:STY
 269496307 1 2 18 2 37 26 26 1092 457 1 0 323 32 -1 -1 0 0 -1 -1 -1 -1 1 0 37 2  0 0 0
 
 *CAD Installation Notes.tex
+>
+*Setup
+*Title Page
+*Installation of Customizations
+*Notes
+*Implementation Installations
+<

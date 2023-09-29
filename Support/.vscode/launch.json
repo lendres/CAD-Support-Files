@@ -14,7 +14,7 @@
 			"name": "Launch ZWCAD",
 			"type": "zwlisp",
 			"request": "launch",
-			"program": "F:\\Program Files\\ZWSOFT\\ZWCAD 2023\\ZWCAD.exe",
+			"program": "F:\\Program Files\\ZWSOFT\\ZWCAD 2024\\ZWCAD.exe",
 			"stopOnEntry": false
 		}
 	]
