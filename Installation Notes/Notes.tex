@@ -12,14 +12,23 @@
 \end{bulletedlist}
 
 \subsection{ZWCAD Lisp Debugging}
-\subsubsection{Configuring}
-To configure the debugger, use the following.
+\subsubsection{Launch the Debugger}
 \begin{numberedlist}
-	\item Install the ZWLisp Visual Studio Code extension.
+	\item Launch \emph{Visual Studio Code} from \emph{ZWCAD}.
+	\begin{plainlist}
+		\item \emph{Manage->Visual LISP Editor}
+	\end{plainlist}
 	\item Open the folder where the lisp files are.  This should be a location that \emph{ZWCAD} can load them.  In this case:
 	\begin{plainlist}
 		\item \textcode{C:\tbs{}Custom Program Files\tbs{} Support Files\tbs{}Support}
 	\end{plainlist}
+\end{numberedlist}
+
+
+\subsubsection{Configuring}
+To configure the debugger, use the following.
+\begin{numberedlist}
+	\item Install the ZWLisp Visual Studio Code extension.
 	\item Press the \emph{Debug} button.  If there is not a \emph{launch.json} file in the folder, one will have to be created (See \figurename~\ref{fig:createlaunchjson}).
 	\item Configure the debugger to point to the \emph{ZWCAD} executable (See \figurename~\ref{fig:zwcadlispsestupjson}).
 \end{numberedlist}
