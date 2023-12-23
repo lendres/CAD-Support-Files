@@ -10,11 +10,12 @@
         RP4 (list (car RP3) (cadr RP1))
   )
   (command 
-    "hatch"
+    "-hatch"
+	"P"
     "ansi31"
     (* (getvar "dimscale") 0.6)
     "0"
-    ""
+    "W"
     "n"
     RP1
     RP2
@@ -22,6 +23,7 @@
     RP4
     "c"
     ""
+	""
   )
   (setvar "cmdecho" CMD)
   (princ)
