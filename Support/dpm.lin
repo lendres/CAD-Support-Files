@@ -2,37 +2,40 @@
 ;;; For ZWCAD, the font style is case sensitive.
 
 *Hot_Water,Hot Water ----- HW ----- HW ----- HW -----
-A,2.0,-0.02,["HW",LineType,S=0.007,R=0.0,X=0.0,Y=-0.0335],-0.153
+A,1.0,-0.02,["HW",LineType,S=0.014,R=0.0,X=0.0,Y=-0.0335],-0.153
 
 *Hot_Water_Supply,Hot Water Supply ----- HWS ----- HWS ----- HWS -----
-A,2.0,-0.02,["HWS",LineType,S=0.007,R=0.0,X=0.0,Y=-0.0335],-0.216
+A,1.0,-0.02,["HWS",LineType,S=0.014,R=0.0,X=0.0,Y=-0.0335],-0.216
 
 *Hot_Water_Return,Hot Water Return ----- HWR ----- HWR ----- HWR -----
-A,1.9,-0.02,["HWR",LineType,S=0.007,R=0.0,X=0.0,Y=-.0335],-0.221
+A,1.0,-0.02,["HWR",LineType,S=0.014,R=0.0,X=0.0,Y=-.0335],-0.221
 
 *Non_Potable_HW,Non Potable HW ----- NPHW ----- NPHW ----- NPHW -----
-A,2.0,-0.02,["NPHW",LineType,S=0.007,R=0.0,X=0.0,Y=-.0335],-0.278
+A,1.0,-0.02,["NPHW",LineType,S=0.014,R=0.0,X=0.0,Y=-.0335],-0.278
 
 *Non_Potable_HWR,Non Potable HWR ----- NPHWR ----- NPHWR ----- NPHWR -----
-A,2.0,-0.02,["NPHWR",LineType,S=0.007,R=0.0,X=0.0,Y=-.0335],-0.345
+A,1.0,-0.02,["NPHWR",LineType,S=0.014,R=0.0,X=0.0,Y=-.0335],-0.345
 
 *Cold_Water,Cold Water ----- CW ----- CW ----- CW -----
-A,2.1,-0.02,["CW",LineType,S=0.007,R=0.0,X=0.0,Y=-.0335],-0.153
+A,1.0,-0.02,["CW",LineType,S=0.014,R=0.0,X=0.0,Y=-.0335],-0.153
 
 *Non_Potable_CW,Non Potable CW ----- NPCW ----- NPCW ----- NPCW -----
-A,2.1,-0.02,["NPCW",LineType,S=0.007,R=0.0,X=0.0,Y=-.0335],-0.278
+A,2.1,-0.02,["NPCW",LineType,S=0.014,R=0.0,X=0.0,Y=-.0335],-0.278
 
 *Gas,Gas ----- GAS ----- GAS ----- GAS -----
-A,2.0,-0.02,["GAS",LineType,S=0.007,R=0.0,X=0.0,Y=-0.0335],-0.192
+A,1.0,-0.02,["GAS",LineType,S=0.014,R=0.0,X=0.0,Y=-0.0335],-0.192
 
 *Vent,Vent ----- V ----- V ----- V -----
-A,1.5,-0.02,["V",LineType,S=0.007,R=0.0,X=0.0,Y=-0.0335],-0.069
+A,0.75,-0.02,["V",LineType,S=0.014,R=0.0,X=0.0,Y=-0.0335],-0.069
+
+*Drain,Drain ----- D ----- D ----- D -----
+A,1.0,-0.02,["D",LineType,S=0.014,R=0.0,X=0.0,Y=-0.0335],-0.069
 
 *Sanitary,Sanitary - - - SAN - - - SAN - - - SAN - - -
-A,0.25,-0.125,0.25,-0.02,["SAN",LineType,S=0.007,R=0.0,X=0.0,Y=-0.0335],-0.192,0.25,-0.125,0.25,-0.125
+A,0.25,-0.125,0.25,-0.02,["SAN",LineType,S=0.014,R=0.0,X=0.0,Y=-0.0335],-0.192,0.25,-0.125,0.25,-0.125
 
 *Vent2,Vent -----v-----v-----v-----v-----
-A,1.25,[SUBV,custshp.shx,s=.1],-.1
+A,0.625,[SUBV,custshp.shx,s=.1],-.1
 
 *Fin_Tube,Fin Tube -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-
 A,.022,[TRACK1,ltypeshp.shx,s=.055],.022
