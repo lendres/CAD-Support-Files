@@ -27,6 +27,7 @@
 *.glsdefs
 *.synctex
 *.synctex(busy)
+*.prj
 
 */Figures/*.jpg
 */Figures/*.eps
@@ -43,3 +44,7 @@ Archive/
 *.dwl
 *.dwl2
 User Files/lae.cuix
+Support/ZWCAD_bak.pgp
+
+
+
